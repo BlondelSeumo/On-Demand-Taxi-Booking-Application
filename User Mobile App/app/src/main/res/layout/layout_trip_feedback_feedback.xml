@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+	<in.techware.lataxicustomer.widgets.CustomTextView
+		android:id="@+id/txt_trip_feedback_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:gravity="top"
+		android:padding="20dp"
+		android:text="@string/label_please_share_you_feedback"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:textColor="@color/text_3"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+	
+	<in.techware.lataxicustomer.widgets.CustomEditText
+		android:id="@+id/etxt_trip_feedback_feedback"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:layout_marginStart="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="8dp"
+		android:layout_marginEnd="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginBottom="20dp"
+		android:background="@color/cream_transparent_50"
+		android:gravity="top"
+		android:hint="@string/hint_type_here"
+		android:isScrollContainer="true"
+		android:minHeight="180dp"
+		android:padding="20dp"
+		android:scrollIndicators="end"
+		app:layout_constraintBottom_toTopOf="@+id/btn_trip_feedback_submit"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/txt_trip_feedback_title" />
+	
+	<in.techware.lataxicustomer.widgets.CustomButton
+		android:id="@+id/btn_trip_feedback_submit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|center"
+		android:layout_marginStart="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginRight="8dp"
+		android:layout_marginBottom="40dp"
+		android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+		android:minWidth="150dp"
+		android:minHeight="40dp"
+		android:text="@string/btn_done"
+		android:textColor="@color/white"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

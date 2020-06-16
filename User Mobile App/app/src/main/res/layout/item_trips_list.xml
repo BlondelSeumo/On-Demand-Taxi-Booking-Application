@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:map="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="25dp"
+	android:orientation="vertical">
+	
+	<!--android:background="@color/gray_1"-->
+	
+	<com.google.android.gms.maps.MapView
+		android:id="@+id/list_map_view"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:background="@color/gray"
+		map:liteMode="true"
+		map:mapType="normal"
+		map:uiCompass="false"
+		map:uiRotateGestures="false"
+		map:uiScrollGestures="false"
+		map:uiTiltGestures="false"
+		map:uiZoomControls="false" />
+	
+	<android.support.constraint.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minHeight="70dp"
+		android:padding="10dp">
+		
+		<ImageView
+			android:id="@+id/iv_driver_photo"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:background="@drawable/circle_red_dotted"
+			app:srcCompat="@drawable/circle_app"
+			map:layout_constraintBottom_toBottomOf="parent"
+			map:layout_constraintStart_toStartOf="parent"
+			map:layout_constraintTop_toTopOf="parent" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:id="@+id/txt_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginLeft="20dp"
+			android:text="@string/sample_date"
+			android:textColor="@color/black"
+			app:layout_constraintStart_toEndOf="@+id/iv_driver_photo"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:id="@+id/txt_car_name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginRight="10dp"
+			android:text="@string/label_car_name"
+			android:textColor="@color/black"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/barrier"
+			app:layout_constraintStart_toEndOf="@+id/iv_driver_photo"
+			app:layout_constraintTop_toBottomOf="@+id/txt_date" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:id="@+id/txt_time"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="20dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginEnd="10dp"
+			android:layout_marginRight="10dp"
+			android:text="@string/sample_time"
+			android:textColor="@color/black"
+			app:layout_constraintEnd_toStartOf="@+id/barrier"
+			app:layout_constraintStart_toEndOf="@+id/txt_date"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<android.support.constraint.Barrier
+			android:id="@+id/barrier"
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			app:barrierDirection="left" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:id="@+id/txt_rate"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:text="@string/sample_amount"
+			android:textColor="@color/colorPrimary"
+			android:textSize="18sp"
+			android:visibility="visible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/barrier"
+			app:layout_constraintTop_toTopOf="parent" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:id="@+id/txt_cancelled"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:text="@string/label_cancelled"
+			android:textColor="@color/colorPrimary"
+			android:textSize="18sp"
+			android:visibility="gone"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/barrier"
+			app:layout_constraintTop_toTopOf="parent" />
+	
+	
+	</android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
+

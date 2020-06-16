@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_earning"
+    tools:context="in.techware.lataxidriverapp.fragments.EarningsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ib_earnings_previous_week"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?selectableItemBackground"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_toolbar_back"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_earnings_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:minHeight="?actionBarSize"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:text="@string/sample_week"
+                android:textColor="@color/text_3"
+                app:srcCompat="@drawable/ic_toolbar_back"/>
+
+            <ImageButton
+                android:id="@+id/ib_earnings_next_week"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:background="?selectableItemBackground"
+                android:padding="15dp"
+                android:rotation="180"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_toolbar_back"/>
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart_earnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="200dp"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_earnings_total_payout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="@string/sample_fare"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_4"
+            android:textSize="35sp"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="@string/label_total_payout"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:paddingTop="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_earnings_trip_history"
+                style="@style/MenuItemParent"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    style="@style/MenuItemImage"
+                    app:srcCompat="@drawable/ic_trip_history"/>
+
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/MenuItemLabel"
+                    android:text="@string/title_trip_history"/>
+
+                <ImageView
+                    style="@style/MenuItemArrow"
+                    app:srcCompat="@drawable/ic_toolbar_back"/>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/MenuItemUnderline"/>
+
+            <LinearLayout
+                android:id="@+id/ll_earnings_pay_statements"
+                style="@style/MenuItemParent"
+                android:visibility="gone"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    style="@style/MenuItemImage"
+                    app:srcCompat="@drawable/ic_pay_statements"/>
+
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/MenuItemLabel"
+                    android:text="@string/title_pay_statements"/>
+
+                <ImageView
+                    style="@style/MenuItemArrow"
+                    app:srcCompat="@drawable/ic_toolbar_back"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                style="@style/MenuItemUnderline"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

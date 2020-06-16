@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	style="@style/NestedScrollBarStyle"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingTop="50dp"
+		android:paddingBottom="20dp">
+		
+		<ImageView
+			android:id="@+id/iv_trip_feedback_bad_remarks_driver_photo"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_gravity="center"
+			android:background="@drawable/circle_red_dotted"
+			android:padding="20dp"
+			android:src="@drawable/ic_dummy_photo" />
+		
+		<RatingBar
+			android:id="@+id/rating_trip_feedback_bad_remark"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="30dp"
+			android:clickable="false"
+			android:theme="@style/RatingBar" />
+		
+		<!--style="?android:attr/ratingBarStyleSmall"-->
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="40dp"
+			android:text="@string/sample_ok"
+			android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="40dp"
+			android:text="@string/label_what_went_wrong"
+			android:textAllCaps="true"
+			android:textSize="22sp" />
+		
+		<in.techware.lataxicustomer.widgets.CustomTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:text="@string/label_please_take_a_few_moments_to_give_us_feedback_on_your_recent_ride_with_the_la_taxi_driver_bad_feedback"
+			android:textColor="#BABABA"
+			/>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="30dp"
+			android:orientation="horizontal"
+			android:weightSum="3">
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_trip_feedback_bad_remarks_service"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_click_gray_rectangle_with_semicircle_edge"
+				android:gravity="center"
+				android:tag="@string/feedback_bad_service"
+				android:text="@string/label_service"
+				android:textColor="@color/text_feedback" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_trip_feedback_bad_remarks_cleanliness"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_click_gray_rectangle_with_semicircle_edge"
+				android:gravity="center"
+				android:tag="@string/feedback_bad_cleanliness"
+				android:text="@string/label_cleanliness"
+				android:textColor="@color/text_feedback" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_trip_feedback_bad_remarks_driving"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_click_gray_rectangle_with_semicircle_edge"
+				android:gravity="center"
+				android:tag="@string/feedback_bad_driving"
+				android:text="@string/label_driving"
+				android:textColor="@color/text_feedback" />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:orientation="horizontal"
+			android:weightSum="3">
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_trip_feedback_bad_remarks_comfort"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_click_gray_rectangle_with_semicircle_edge"
+				android:gravity="center"
+				android:tag="@string/feedback_bad_comfort"
+				android:text="@string/label_comfort"
+				android:textColor="@color/text_feedback" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_trip_feedback_bad_remarks_car_quality"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_click_gray_rectangle_with_semicircle_edge"
+				android:gravity="center"
+				android:tag="@string/feedback_bad_car_quality"
+				android:text="@string/label_car_quality"
+				android:textColor="@color/text_feedback" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_trip_feedback_bad_remarks_other"
+				android:layout_width="0dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:background="@drawable/btn_click_gray_rectangle_with_semicircle_edge"
+				android:gravity="center"
+				android:tag="@string/feedback_bad_other"
+				android:text="@string/label_other"
+				android:textColor="@color/text_feedback" />
+		
+		</LinearLayout>
+		
+		<in.techware.lataxicustomer.widgets.CustomButton
+			android:id="@+id/btn_trip_feedback_bad_remarks_submit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="30dp"
+			android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+			android:gravity="center"
+			android:minWidth="150dp"
+			android:minHeight="40dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:text="@string/btn_submit"
+			android:textColor="@color/white" />
+	
+	</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

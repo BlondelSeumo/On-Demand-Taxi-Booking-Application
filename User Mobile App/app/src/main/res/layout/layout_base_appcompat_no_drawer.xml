@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorlayout_base_appcompat_no_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activity.BaseAppCompatNoDrawerActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_base_appcompat_no_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:paddingTop="?attr/actionBarSize">
+
+        <FrameLayout
+            android:id="@+id/lyt_frame_base_appcompat_no_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/lyt_default_message_base_appcompat_no_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_default_message_base_appcompat_no_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/message_no_trips_taken_yet"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyt_contents_base_appcompat_no_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:orientation="vertical">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/lyt_progress_base"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <ProgressBar
+                    android:id="@+id/progress_base_appcompat_no_drawer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+        </FrameLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>

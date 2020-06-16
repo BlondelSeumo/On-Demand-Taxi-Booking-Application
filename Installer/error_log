@@ -1,0 +1,5 @@
+[17-Mar-2020 10:49:53 UTC] PHP Notice:  Undefined index: smtp_host in /home/ykwwgxhs8c0y/public_html/gomassar.com/admin/Installer/allDetails.php on line 10
+[17-Mar-2020 10:49:53 UTC] PHP Notice:  Undefined index: smtp_username in /home/ykwwgxhs8c0y/public_html/gomassar.com/admin/Installer/allDetails.php on line 11
+[17-Mar-2020 10:49:53 UTC] PHP Notice:  Undefined index: smtp_password in /home/ykwwgxhs8c0y/public_html/gomassar.com/admin/Installer/allDetails.php on line 12
+[17-Mar-2020 10:49:53 UTC] PHP Notice:  Undefined index: admin_email in /home/ykwwgxhs8c0y/public_html/gomassar.com/admin/Installer/allDetails.php on line 14
+[17-Mar-2020 10:50:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/ykwwgxhs8c0y/public_html/gomassar.com/admin/Installer/allDetails.php on line 124

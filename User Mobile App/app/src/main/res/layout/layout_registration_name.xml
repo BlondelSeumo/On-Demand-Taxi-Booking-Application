@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxicustomer.activity.RegistrationActivity">
+
+    <LinearLayout
+        style="@style/RegistrationParent">
+
+        <LinearLayout
+            style="@style/RegistrationTitleParent">
+
+            <ImageView
+                style="@style/RegistrationTitleImage"
+                android:src="@drawable/ic_title_name"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                style="@style/RegistrationTitleLabel"
+                android:text="@string/label_whats_s_your_name"/>
+
+        </LinearLayout>
+
+        <in.techware.lataxicustomer.widgets.CustomEditText
+            android:id="@+id/etxt_registration_name"
+            style="@style/RegistrationInputBox"
+            android:hint="@string/hint_enter_your_name_here"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/RegistrationFAB"
+        android:onClick="onRegistrationNameSubmitClick"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow_registration"/>
+
+</FrameLayout>

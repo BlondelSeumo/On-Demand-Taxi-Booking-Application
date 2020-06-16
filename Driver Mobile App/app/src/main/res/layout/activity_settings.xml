@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.SettingsActivity">
+
+    <LinearLayout
+        style="@style/MenuItemParent"
+        android:background="?selectableItemBackground"
+        android:onClick="onSettingsAccessibilityClick">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            style="@style/MenuItemLabel"
+            android:paddingLeft="0dp"
+            android:text="@string/label_accessibility"/>
+
+        <ImageView
+            style="@style/MenuItemArrow"
+            app:srcCompat="@drawable/ic_toolbar_back"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/MenuItemDottedUnderline"/>
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="?selectableItemBackground"
+        android:text="@string/label_notifications"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#853643"/>
+
+    <LinearLayout
+        style="@style/MenuItemParent"
+        android:background="?selectableItemBackground">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            style="@style/MenuItemLabel"
+            android:paddingLeft="0dp"
+            android:text="@string/label_account_status"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/settings_online_offline_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:theme="@style/MySwitch"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/MenuItemParent"
+        android:background="?selectableItemBackground"
+        android:onClick="onSettingsContactClick">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            style="@style/MenuItemLabel"
+            android:paddingLeft="0dp"
+            android:text="@string/label_contacts"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/MenuItemDottedUnderline"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        style="@style/MenuItemParent"
+        android:layout_marginTop="10dp"
+        android:background="?selectableItemBackground">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            style="@style/MenuItemLabel"
+            android:paddingLeft="0dp"
+            android:paddingRight="10dp"
+            android:text="@string/label_volume"
+            android:maxWidth="80dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_settings_volume"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:progressTint="#A3A3A3"
+            android:thumbTint="#A3A3A3"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

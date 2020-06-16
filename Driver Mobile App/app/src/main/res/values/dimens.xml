@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="item_profile_photo_width">120dp</dimen>
+    <dimen name="item_recent_photo_width">80dp</dimen>
+    <dimen name="item_success_story_photo_width">150dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+    <dimen name="drawer_width_inner">280dp</dimen>
+    <dimen name="padding_tab_button">20dp</dimen>
+    <dimen name="search_max_width">80dp</dimen>
+    <dimen name="tab_min_width">100dp</dimen>
+    <dimen name="search_to_padding">10dp</dimen>
+    <dimen name="textsize_tab_button">14sp</dimen>
+    <dimen name="welcome_image_height">350dp</dimen>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.activity.ProfileActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="40dp">
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_dotted_red"
+                android:padding="30dp"
+                android:scaleType="centerInside"
+                android:tint="@color/tint_photo"/>
+
+            <ImageView
+                android:id="@+id/iv_profile_display_photo"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                app:srcCompat="@drawable/ic_dummy_driver_photo"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"/>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_document_upload_take_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+            android:gravity="center"
+            android:minWidth="150dp"
+            android:onClick="onProfileTakePhotoClick"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_camera"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/btn_take_photo"
+                android:textColor="@color/white"
+                app:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_profile"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_red_3"
+            android:textStyle="bold"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_name"
+            android:textColor="@color/text_red_3"/>
+    
+    
+        <in.techware.lataxidriverapp.widgets.CustomEditText
+            android:id="@+id/etxt_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray_transparent_70"
+            android:inputType="textPersonName|textCapWords"
+            android:lines="1"
+            android:maxLines="1"
+            android:minHeight="40dp"
+            android:text="@string/btn_name"
+            android:textColor="@color/text_2" />
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/label_email"
+            android:textColor="@color/text_red_3"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomEditText
+            android:id="@+id/etxt_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:backgroundTint="@color/gray_transparent_70"
+            android:maxLines="1"
+            android:minHeight="40dp"
+            android:text="@string/hint_email"
+            android:textColor="@color/text_2"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/hint_mobile"
+            android:textColor="@color/text_red_3"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_profile_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minHeight="35dp"
+            android:gravity="bottom"
+            android:background="?selectableItemBackground"
+            android:onClick="onProfileMobileClick"
+            android:text="@string/sample_phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/text_1"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/label_address"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_red_3"
+            android:textStyle="bold"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_profile_address_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextAppearance="@style/HintAppearance">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietxt_profile_address_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray_transparent_70"
+                android:hint="@string/hint_address_1"
+                android:inputType="textPostalAddress|textCapWords"
+                android:minHeight="40dp"
+                android:textColor="@color/text_2"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_profile_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/HintAppearance">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietxt_profile_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_city"
+                android:inputType="textCapWords"
+                android:backgroundTint="@color/gray_transparent_70"
+                android:lines="1"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:textColor="@color/text_2"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_profile_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/HintAppearance">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietxt_profile_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_state"
+                android:backgroundTint="@color/gray_transparent_70"
+                android:inputType="textCapWords"
+                android:lines="1"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:textColor="@color/text_2"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_profile_postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintTextAppearance="@style/HintAppearance">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tietxt_profile_postal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_postal_code"
+                android:inputType="textCapWords|phone"
+                android:backgroundTint="@color/gray_transparent_70"
+                android:lines="1"
+                android:maxLines="1"
+                android:minHeight="40dp"
+                android:textColor="@color/text_2"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

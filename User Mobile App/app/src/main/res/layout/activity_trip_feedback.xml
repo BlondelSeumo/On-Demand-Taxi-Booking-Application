@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_driver_rating"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="in.techware.lataxicustomer.activity.TripFeedbackActivity">
+	
+	<ViewFlipper
+		android:id="@+id/viewFlipper_trip_feedback"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<include layout="@layout/layout_trip_feedback_driver_rating" />
+		<include layout="@layout/layout_trip_feedback_bad_remarks" />
+		<include layout="@layout/layout_trip_feedback_good_remarks" />
+		<include layout="@layout/layout_trip_feedback_feedback" />
+	
+	</ViewFlipper>
+</LinearLayout>

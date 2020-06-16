@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="in.techware.lataxicustomer.activity.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/bg_header"
+            android:gravity="center_vertical|start"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_more_than"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:textAllCaps="true"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_just_a_ride"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:textAllCaps="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/iv_registration_mobile_country_flag"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="@drawable/circle_gray"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_nation_america"/>
+
+
+            <Spinner
+                android:id="@+id/spinner_registration_mobile_country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:minWidth="60dp"
+                android:theme="@style/SpinnerStyle"/>
+
+            <in.techware.lataxicustomer.widgets.CustomEditText
+                android:id="@+id/etxt_registration_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:hint="@string/hint_enter_your_number"
+                android:inputType="phone"
+                android:minHeight="45dp"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp"
+            android:background="@color/underline_color"/>
+
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_registration_mobile_otp_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/label_enter_the_verification_code"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_registration_mobile_otp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <in.techware.lataxicustomer.widgets.OTPEditText
+                android:id="@+id/etxt_registration_mobile_one"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="@string/hint_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+            <in.techware.lataxicustomer.widgets.OTPEditText
+                android:id="@+id/etxt_registration_mobile_two"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="@string/hint_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+            <in.techware.lataxicustomer.widgets.OTPEditText
+                android:id="@+id/etxt_registration_mobile_three"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="@string/hint_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+            <in.techware.lataxicustomer.widgets.OTPEditText
+                android:id="@+id/etxt_registration_mobile_four"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="@string/hint_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+            <in.techware.lataxicustomer.widgets.OTPEditText
+                android:id="@+id/etxt_registration_mobile_five"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="@string/hint_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+            <in.techware.lataxicustomer.widgets.OTPEditText
+                android:id="@+id/etxt_registration_mobile_six"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle_white_with_gray_edge"
+                android:gravity="center"
+                android:hint="@string/hint_0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/text_4"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/RegistrationFAB"
+        android:onClick="onRegistrationMobileNumberSubmitClick"
+        app:backgroundTint="@color/bg_fab"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow_registration"/>
+
+</FrameLayout>

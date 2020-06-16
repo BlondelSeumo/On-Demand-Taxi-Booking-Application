@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_landing_estimation_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <!--<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_driver_info"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp">
+
+            <ImageView
+                android:id="@+id/iv_driver_details_driver_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawacircle_red_dottedrcle"
+                android:src="@drawable/ic_dummy_photo"/>
+
+            <in.techware.lataxi.widgets.CustomTextView
+                android:id="@+id/txt_driver_details_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="40dp"
+                android:text="Driver name"/>
+
+            <RatingBar
+                android:id="@+id/rb_driver_details_driver_rating"
+                style="?attr/ratingBarStyleSmall"
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="60dp"
+                android:progressTint="@color/colorPrimary"
+                android:stepSize="1"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_details_car_photo"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_car_details"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_details_car_"
+                android:layout_width="80dp"
+                android:layout_height="59dp"
+                android:layout_alignBottom="@+id/rb_driver_details_driver_rating"
+                android:layout_alignEnd="@+id/txt_driver_details_car_number"
+                android:layout_alignRight="@+id/txt_driver_details_car_number"
+                android:scaleType="centerInside"/>
+
+            <in.techware.lataxi.widgets.CustomTextView
+                android:id="@+id/txt_driver_details_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="75dp"
+                android:text="Car Number"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp">
+
+            <in.techware.lataxi.widgets.CustomButton
+                android:id="@+id/btn_driver_contact"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"
+                android:gravity="center"
+                android:onClick="onContactButtonClick"
+                android:text="@string/contact"
+                android:textColor="@color/white"/>
+
+            <in.techware.lataxi.widgets.CustomButton
+                android:id="@+id/btn_driver_cancel"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_round_edges_white"
+                android:onClick="onCancelButtonClick"
+                android:text="@string/cancel"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/ic_payment"/>
+
+        </FrameLayout>
+
+    </LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/frame_landing_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="100dp"
+        android:onClick="onLayoutClickLandingPage"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_landing_bottombar"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_bottom_sheet_landing_car_types"
+            android:layout_width="match_parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:listitem="@layout/item_car_type"
+            android:layout_gravity="top"
+            android:layout_height="100dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_landing_bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="top"
+            android:visibility="gone"
+            android:onClick="onLayoutClickLandingPage"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="onLaGoCarClick"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_car_one"
+                    android:layout_width="73dp"
+                    android:layout_height="51dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerInside"
+                    />
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_la_go"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"
+                    android:gravity="center"
+                    android:minHeight="25dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:onClick="onLaXCarClick"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_car_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    />
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_la_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="25dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:onClick="onCarXlClick"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_car_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    />
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_la_xl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="25dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:onClick="onCarXxlClick"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_car_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    />
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_la_xll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="25dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_estimation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_eta"
+                    android:textColor="#0c4856"/>
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_max_size"
+                    android:textColor="#0c4856"/>
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_max_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_fare_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/label_min_fare"
+                    android:textColor="#0c4856"/>
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"/>
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_estimated_fare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_fare_estimate"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/bg_black_round_edges"
+            android:gravity="center"
+            android:onClick="onFareEstimateClick"
+            android:text="@string/btn_get_fare_estimate"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_to"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/circle_gray"
+            android:gravity="center"
+            android:text="@string/label_to"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_destination_estimated"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:onClick="onEstimatedDestinationClick"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_destination_trips"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_estimated_destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:onClick="onEstimatedDestinationClick"
+                android:text="@string/label_destination"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_landing_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:minHeight="120dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminate="true"
+            android:progressTint="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

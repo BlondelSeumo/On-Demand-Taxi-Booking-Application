@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/drawer_width"
+    android:layout_height="match_parent"
+    android:background="#0a4755"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/drawer_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/bg_header"
+            android:minHeight="300dp"
+            android:orientation="vertical"
+            android:paddingBottom="40dp"
+            android:paddingTop="30dp"
+            android:weightSum="4">
+
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/dotted">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_white"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_dummy_photo"/>
+
+                <ImageView
+                    android:id="@+id/iv_drawer_profile_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="right"
+                    android:onClick="onEditClick"
+                    android:src="@drawable/ic_edit_button"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_drawer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:hint="@string/hint_username"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="24sp"
+                    />
+
+                <in.techware.lataxicustomer.widgets.CustomTextView
+                    android:id="@+id/txt_drawer_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="5dp"
+                    android:hint="@string/sample_email"
+                    android:textColor="@color/white"
+                    android:textColorHint="#b1bcbf"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="60dp"
+                    android:background="?selectableItemBackground"
+                    android:onClick="onTripsClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_trips_nav_drawer"/>
+
+                    <in.techware.lataxicustomer.widgets.CustomTextView
+                        android:id="@+id/txt_trips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/label_trips"
+                        android:textColor="#9eadb1"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="?selectableItemBackground"
+                    android:onClick="onFreeRidesClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_free_rides_nav_drawer"/>
+
+                    <in.techware.lataxi.widgets.CustomTextView
+                        android:id="@+id/txt_free_rides"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/free_rides"
+                        android:textColor="#9eadb1"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="?selectableItemBackground"
+                    android:onClick="onPromotionsClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_promotions_nav_drawer"/>
+
+                    <in.techware.lataxicustomer.widgets.CustomTextView
+                        android:id="@+id/txt_promotions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/label_promotion"
+                        android:textColor="#9eadb1"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="?selectableItemBackground"
+                    android:onClick="onSettingsClick"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_settings_nav_drawer"/>
+
+                    <in.techware.lataxicustomer.widgets.CustomTextView
+                        android:id="@+id/txt_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/label_settings"
+                        android:textColor="#9eadb1"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyt_base_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/lyt_contents_base_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lyt_default_message_base_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_default_message_base_fragment"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:tint="@color/carbon"
+            android:scaleType="centerInside"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_default_message_base_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_no_data_available"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/carbon"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/lyt_progress_base_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ProgressBar
+            android:id="@+id/progress_base_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

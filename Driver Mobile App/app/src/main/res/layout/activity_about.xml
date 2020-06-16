@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.AboutActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_about_software_licences"
+        style="@style/MenuItemParent"
+        android:layout_marginTop="10dp"
+        android:background="?selectableItemBackground"
+        android:onClick="onAboutSoftwareLicencesClick">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            style="@style/MenuItemLabel"
+            android:paddingLeft="0dp"
+            android:text="@string/label_software_licences"/>
+
+        <ImageView
+            style="@style/MenuItemArrow"
+            app:srcCompat="@drawable/ic_toolbar_back"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_about_map_licences"
+        style="@style/MenuItemParent"
+        android:background="?selectableItemBackground"
+        android:onClick="onAboutMapLicencesClick">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            style="@style/MenuItemLabel"
+            android:paddingLeft="0dp"
+            android:text="@string/label_map_licences"/>
+
+        <ImageView
+            style="@style/MenuItemArrow"
+            app:srcCompat="@drawable/ic_toolbar_back"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/MenuItemDottedUnderline"
+        android:layout_margin="20dp"/>
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_about_this_version"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:id="@+id/txt_about_app_version"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</LinearLayout>

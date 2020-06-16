@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".activity.SettingsPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/bg_settings"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dotted">
+
+                <ImageView
+                    android:id="@+id/iv_profile_background"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_white"
+                    app:srcCompat="@drawable/ic_dummy_photo"
+                    android:visibility="visible"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_profile_photo"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:visibility="visible"/>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/label_profile"
+            android:textColor="#0a4755"
+            android:textSize="20sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/label_name"
+            android:textColor="#0a4755"
+            android:textSize="16sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_email"
+            android:textColor="#0a4755"
+            android:textSize="16sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_mobile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <!--<ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle_gray"
+                android:padding="1dp"
+                android:src="@drawable/ic_nation_america"/>-->
+
+            <!--<in.techware.lataxi.widgets.CustomTextView
+                android:id="@+id/txt_mobile_code"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|start"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>-->
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/dotted_line"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_places"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_on_add_home"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_home_search_page"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_add_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/btn_add_home"
+                android:paddingTop="5dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_on_add_work"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_work_search_page"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_add_work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="@string/btn_add_work"
+                android:paddingTop="5dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

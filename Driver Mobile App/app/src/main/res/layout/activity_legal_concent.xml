@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/parent"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".activity.LegalConsentActivity">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingLeft="30dp"
+		android:paddingTop="20dp"
+		android:paddingRight="30dp"
+		android:paddingBottom="50dp">
+		
+		<in.techware.lataxidriverapp.widgets.CustomTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="50dp"
+			android:text="@string/label_legal_consent"
+			android:textColor="@color/colorPrimary"
+			android:textSize="22sp" />
+		
+		<in.techware.lataxidriverapp.widgets.CustomTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="20sp"
+			android:gravity="center"
+			android:text="@string/label_agreement_proceed"
+			android:textColor="@color/text_4"
+			android:textSize="17sp" />
+		
+		<View
+			android:layout_width="45dp"
+			android:layout_height="5dp"
+			android:layout_gravity="center"
+			android:layout_margin="20dp"
+			android:background="@drawable/bg_app_rectangle_with_semicircle_edge" />
+		
+		<in.techware.lataxidriverapp.widgets.CustomTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:lineSpacingExtra="5dp"
+			android:text="@string/label_consent_agreement"
+			android:textColor="@color/text_3"
+			android:textSize="14sp" />
+		
+		<android.support.v7.widget.AppCompatCheckBox
+			android:id="@+id/cb_legal_consent"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginTop="40dp"
+			android:paddingLeft="10dp"
+			android:text="@string/label_i_accept"
+			android:textColor="@color/text_5"
+			android:textSize="18sp"
+			android:theme="@style/CheckBox"
+			app:buttonTint="@color/text_5" />
+		
+		<in.techware.lataxidriverapp.widgets.CustomButton
+			android:id="@+id/btn_continue_agreement"
+			android:layout_width="200dp"
+			android:layout_height="45dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+			android:onClick="onLegalConsentSubmitClick"
+			android:text="@string/btn_continue"
+			android:textColor="@color/white" />
+	
+	</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

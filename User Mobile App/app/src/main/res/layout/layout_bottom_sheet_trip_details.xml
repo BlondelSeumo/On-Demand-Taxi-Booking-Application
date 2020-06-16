@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_trip_details_bottomsheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:id="@+id/ll_trip_details_driver_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="80dp"
+        android:onClick="onLayoutClick"
+        android:orientation="horizontal"
+        android:paddingLeft="110dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/label_name"
+                android:textSize="12sp"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_driver_name_trip_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/label_you_rated"
+                android:textSize="12sp"/>
+
+            <RatingBar
+                android:id="@+id/rating_bottom_sheet_trip_details"
+                style="?attr/ratingBarStyleSmall"
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/colorPrimary"
+                android:stepSize="1"
+                android:visibility="gone"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:text="@string/label_not_available"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_trip_details_fare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_base_fare"
+                android:textColor="#6a6a6a"
+                android:textSize="16sp"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_base_rate_trip_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="@string/sample_fare"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_kilometer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/label_kilometers"
+                android:textColor="#6B6B6B"
+                android:textSize="16sp"/>
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_kilometer_rate_trip_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/sample_fare"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_minute"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/label_minutes"
+                android:textColor="#6B6B6B"
+                android:textSize="16sp"/>
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_minute_rate_trip_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/sample_fare"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/label_sub_total"
+                android:textColor="#6B6B6B"
+                android:textSize="16sp"/>
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_subtotal_rate_trip_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/sample_fare"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/label_promotion"
+                android:textColor="#6B6B6B"
+                android:textSize="16sp"/>
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_promotion_rate_trip_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/sample_fare"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="35dp"
+            android:orientation="horizontal">
+
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="@string/label_cash"
+                android:textColor="#6B6B6B"
+                android:textSize="16sp"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_total_rate_trip_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="@string/sample_fare"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dashed_line_landing_page"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    

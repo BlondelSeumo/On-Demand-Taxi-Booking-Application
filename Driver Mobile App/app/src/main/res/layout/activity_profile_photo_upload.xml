@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewflipper_profile_photo_upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.ProfilePhotoUploadActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_profile_photo_upload_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/ic_driver_photo_background"
+                app:srcCompat="@drawable/ic_driver_dummy"/>
+
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    app:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_5"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/label_profile_photo"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="50dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_3"
+                    android:gravity="center_horizontal"
+                    android:text="@string/label_please_take_a_clear_photo_of_your_face"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_photo_take_photo"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+            android:gravity="center"
+            android:onClick="onProfilePhotoUploadTakePhotoClick"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_camera"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/btn_take_photo"
+                android:textColor="@color/white"
+                app:textAllCaps="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_profile_photo_preview"
+        android:visibility="gone"/>
+
+</ViewFlipper>

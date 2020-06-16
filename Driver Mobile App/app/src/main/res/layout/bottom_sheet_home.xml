@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_home_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:minHeight="120dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="120dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/lyt_home_card_offline"
+            layout="@layout/layout_home_card_offline"
+            android:visibility="visible"/>
+
+        <include
+            android:id="@+id/lyt_home_card_online"
+            layout="@layout/layout_home_card_online"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:id="@+id/txt_home_card_1_no_trips_taken"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:text="@string/label_no_trips_taken"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_4"
+        android:textStyle="bold"
+        android:visibility="visible"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_home_card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_dotted_gray"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_home_trip_history"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:listitem="@layout/item_home_trip_history"/>
+
+
+            <in.techware.lataxidriverapp.widgets.CustomButton
+                android:id="@+id/btn_home_card_1_trip_history"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+                android:minHeight="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/btn_trip_history"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--  <android.support.v4.view.ViewPager
+              android:id="@+id/pager_welcome"
+              android:layout_width="match_parent"
+              android:layout_height="150dp">
+
+              &lt;!&ndash;  <include layout="@layout/layout_welcome_page_first"/>
+
+                <include layout="@layout/layout_welcome_page_second"/>
+
+                <include layout="@layout/layout_welcome_page_third"/>
+        &ndash;&gt;
+          </android.support.v4.view.ViewPager>
+
+          <me.relex.circleindicator.CircleIndicator
+              android:id="@+id/indicator_home_slider"
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:layout_gravity="bottom"
+              app:ci_drawable="@drawable/circle_slider_active"
+              app:ci_drawable_unselected="@drawable/circle_slider_inactive"
+              app:ci_height="10dp"
+              app:ci_width="10dp"/>
+  -->
+
+</android.support.v7.widget.CardView>

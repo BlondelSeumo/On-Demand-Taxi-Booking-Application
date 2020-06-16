@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_search_page"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="in.techware.lataxicustomer.activity.SearchPageActivity">
+	
+	<fragment
+		android:id="@+id/search_autocomplete_fragment"
+		android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+		
+		<LinearLayout
+			android:id="@+id/ll_home"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="50dp"
+			android:onClick="onAddHomeClick"
+			android:orientation="horizontal">
+			
+			<ImageView
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:src="@drawable/ic_home_search_page" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_search_page_add_home"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="15dp"
+				android:hint="@string/btn_add_home"
+				android:paddingTop="5dp"
+				android:textSize="20sp" />
+		
+		</LinearLayout>
+		
+		<LinearLayout
+			android:id="@+id/ll_work"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="10dp"
+			android:onClick="onAddWorkClick"
+			android:orientation="horizontal">
+			
+			<ImageView
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:layout_gravity="center"
+				android:src="@drawable/ic_work_search_page" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:id="@+id/txt_search_page_add_work"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginLeft="15dp"
+				android:hint="@string/btn_add_work"
+				android:paddingTop="5dp"
+				android:textSize="20sp" />
+		
+		</LinearLayout>
+		
+		<View
+			android:id="@+id/view_line"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginTop="20dp"
+			android:layout_marginRight="20dp"
+			android:background="@drawable/dotted_line" />
+		
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rv_search_results"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_margin="20dp"
+			android:layout_weight="1"
+			tools:listitem="@layout/item_search_results" />
+	</LinearLayout>
+</FrameLayout>
+	
+	<!--<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="20dp">
+
+		<ImageView
+			android:layout_width="28dp"
+			android:layout_height="28dp"
+			android:layout_gravity="center"
+			android:src="@drawable/ic_previous_search_search_page"/>
+
+		<in.techware.lataxi.widgets.CustomTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20dp"
+			android:text="Search results"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="10dp">
+
+		<ImageView
+			android:layout_width="28dp"
+			android:layout_height="28dp"
+			android:layout_gravity="center"
+			android:src="@drawable/ic_previous_search_search_page"/>
+
+		<in.techware.lataxi.widgets.CustomTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20dp"
+			android:text="Search results"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="10dp">
+
+		<ImageView
+			android:layout_width="28dp"
+			android:layout_height="28dp"
+			android:layout_gravity="center"
+			android:src="@drawable/ic_previous_search_search_page"/>
+
+		<in.techware.lataxi.widgets.CustomTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20dp"
+			android:text="Search results"/>
+
+	</LinearLayout>-->
+

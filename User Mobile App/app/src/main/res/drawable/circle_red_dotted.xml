@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:innerRadius="0dp"
+	android:shape="ring"
+	
+	android:thicknessRatio="2"
+	android:useLevel="false">
+	
+	<stroke
+		android:width="2dp"
+		android:color="@color/dark_red"
+		android:dashWidth="10dp"
+		android:dashGap="2dp" />
+	<padding
+		android:bottom="3dp"
+		android:left="3dp"
+		android:right="3dp"
+		android:top="3dp" />
+	<corners android:radius="1dp" />
+
+</shape>

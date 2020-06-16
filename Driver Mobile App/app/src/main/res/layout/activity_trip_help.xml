@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trip_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.activity.TripHelpActivity">
+
+    <include
+        layout="@layout/fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        app:layout_anchor="@+id/ll_trip_help"
+        app:layout_anchorGravity="top"/>
+
+    <LinearLayout
+        android:id="@+id/ll_trip_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_trip_help_driver_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="80dp"
+            android:orientation="horizontal"
+            android:paddingLeft="110dp"
+            android:paddingRight="20dp">
+
+
+            <LinearLayout
+                style="@style/HelpFeedbackItemLabel"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/HelpFeedbackItemParent"
+                    android:gravity="center_vertical"
+                    android:text="@string/label_name"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_3"
+                    android:textSize="12sp"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_trip_help_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_name"
+                    android:textColor="@color/text_3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="30dp"
+                android:minWidth="80dp"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/HelpFeedbackItemParent"
+                    android:gravity="center_vertical"
+                    android:text="@string/label_you_rated"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_3"
+                    android:textSize="12sp"/>
+
+
+                <RatingBar
+                    android:id="@+id/rating_trip_help"
+                    style="?attr/ratingBarStyleSmall"
+                    android:theme="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progress="5"
+                    android:progressTint="@color/colorPrimaryDark"
+                    android:rating="3"
+                    android:stepSize=".5"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_trip_help_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_NA"
+                    android:textColor="@color/green"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/dotted_line"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv_trip_help_fare"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/ll_trip_help_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    style="@style/HelpFeedbackItemParent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <in.techware.lataxidriverapp.widgets.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/label_estimated_payout"
+                        android:textColor="@color/text_5"/>
+
+                    <in.techware.lataxidriverapp.widgets.CustomTextView
+                        android:id="@+id/txt_trip_help_estimated_payout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="right"
+                        android:text="@string/sample_fare"
+                        android:textColor="@color/text_5"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="20dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/circle_green"/>
+
+                    <in.techware.lataxidriverapp.widgets.CustomTextView
+                        android:id="@+id/txt_trip_help_source_location"
+                        style="@style/HelpFeedbackItemLabel"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="@string/sample_location"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_3"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="20dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        app:srcCompat="@drawable/circle_red_1"/>
+
+                    <in.techware.lataxidriverapp.widgets.CustomTextView
+                        android:id="@+id/txt_trip_help_destination_location"
+                        style="@style/HelpFeedbackItemLabel"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingStart="10dp"
+                        android:text="@string/sample_location"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/text_3"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/dotted_line"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_trip_help_feedback_1"
+                    style="@style/HelpFeedbackItemParent"
+                    android:layout_marginTop="15dp"
+                    android:onClick="onTripHelpFeedBackClick"
+                    android:tag="0">
+
+                    <TextView
+                        style="@style/HelpFeedbackItemLabel"
+                        android:text="@string/sample_lorem_ipsum_small"/>
+
+                    <ImageView
+                        android:id="@+id/iv_trip_help_feedback_1_select"
+                        style="@style/HelpFeedbackItemTick"
+                        android:src="@drawable/ic_tick"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_trip_help_feedback_2"
+                    style="@style/HelpFeedbackItemParent"
+                    android:onClick="onTripHelpFeedBackClick"
+                    android:tag="1">
+
+                    <TextView
+                        style="@style/HelpFeedbackItemLabel"
+                        android:layout_gravity="center"
+                        android:text="@string/sample_lorem_ipsum_small"/>
+
+                    <ImageView
+                        android:id="@+id/iv_trip_help_feedback_2_select"
+                        style="@style/HelpFeedbackItemTick"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tick"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_trip_help_feedback_3"
+                    style="@style/HelpFeedbackItemParent"
+                    android:onClick="onTripHelpFeedBackClick"
+                    android:tag="2">
+
+                    <TextView
+                        style="@style/HelpFeedbackItemLabel"
+                        android:layout_gravity="center"
+                        android:text="@string/sample_lorem_ipsum_small"/>
+
+                    <ImageView
+                        android:id="@+id/iv_trip_help_feedback_3_select"
+                        style="@style/HelpFeedbackItemTick"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tick"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_trip_help_feedback_4"
+                    style="@style/HelpFeedbackItemParent"
+                    android:onClick="onTripHelpFeedBackClick"
+                    android:tag="3">
+
+                    <TextView
+                        style="@style/HelpFeedbackItemLabel"
+                        android:layout_gravity="center"
+                        android:text="@string/sample_lorem_ipsum_small"/>
+
+                    <ImageView
+                        android:id="@+id/iv_trip_help_feedback_4_select"
+                        style="@style/HelpFeedbackItemTick"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tick"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_trip_help_feedback_5"
+                    style="@style/HelpFeedbackItemParent"
+                    android:onClick="onTripHelpFeedBackClick"
+                    android:tag="4">
+
+                    <TextView
+                        style="@style/HelpFeedbackItemLabel"
+                        android:layout_gravity="center"
+                        android:text="@string/sample_lorem_ipsum_small"/>
+
+                    <ImageView
+                        android:id="@+id/iv_trip_help_feedback_5_select"
+                        style="@style/HelpFeedbackItemTick"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tick"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_trip_help_feedback_6"
+                    style="@style/HelpFeedbackItemParent"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="onTripHelpFeedBackClick"
+                    android:tag="5">
+
+                    <TextView
+                        style="@style/HelpFeedbackItemLabel"
+                        android:layout_gravity="center"
+                        android:text="@string/sample_lorem_ipsum_small"/>
+
+                    <ImageView
+                        android:id="@+id/iv_trip_help_feedback_6_select"
+                        style="@style/HelpFeedbackItemTick"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_tick"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <in.techware.lataxidriverapp.widgets.CustomButton
+            android:id="@+id/btn_trip_help_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_app_rectangle_with_semicircle_edge"
+            android:minHeight="40dp"
+            android:minWidth="150dp"
+            android:onClick="onTripHelpFeedbackSubmitClick"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="submit"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_trip_help_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circle_carbon_transparent"
+        android:src="@drawable/circle_carbon_transparent"
+        app:layout_anchor="@+id/ll_trip_help"
+        app:layout_anchorGravity="top|start"/>
+</android.support.design.widget.CoordinatorLayout>

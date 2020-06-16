@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxicustomer.activity.RequestingPageActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_requesting_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="@string/label_requesting"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:text="@string/label_your_lataxi_fare_is"
+                android:textSize="20sp"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:id="@+id/txt_requesting_page_total_fare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/sample_total_fare"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/label_your_fare_may_change_if_you_update_your_destination_or_make_multiple_stops"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|bottom"
+                android:layout_marginTop="100dp"
+                android:onClick="onCancelClick"
+                android:src="@drawable/ic_cancel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

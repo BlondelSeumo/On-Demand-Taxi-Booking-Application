@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_online_offline_switch"
+        android:title="@string/label_online_offline"
+        app:actionLayout="@layout/custom_action_online"
+        app:showAsAction="always"/>
+</menu>

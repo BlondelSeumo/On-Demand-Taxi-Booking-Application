@@ -1,0 +1,35 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.fragments.HomeFragment">
+
+    <include
+        layout="@layout/fragment_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/card_home_details"
+        android:layout_gravity="top"
+        app:layout_anchor="@+id/card_home_details"
+        app:layout_anchorGravity="top"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_home_my_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="130dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_my_location"
+        android:tint="@color/white"
+        app:backgroundTint="@color/bg_fab_2"
+        app:elevation="4dp"
+        app:fabSize="auto"/>
+
+    <include layout="@layout/bottom_sheet_home"/>
+
+</android.support.design.widget.CoordinatorLayout>

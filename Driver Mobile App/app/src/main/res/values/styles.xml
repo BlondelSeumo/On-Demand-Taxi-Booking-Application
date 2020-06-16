@@ -1,0 +1,422 @@
+<resources>
+
+    <style name="NestedScrollBarStyle">
+        <item name="android:scrollbarFadeDuration">2</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="SpinnerStyle">
+        <!-- Color when pressed -->
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">#ffffff</item>
+        <!--<item name="background">@color/colorPrimary</item>-->
+
+    </style>
+
+    <style name="RegistrationItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegistrationItemParent.NoTopMargin">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="RegistrationItemValue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/carbon</item>
+    </style>
+
+    <style name="RegistrationItemArrow">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="RegistrationItemUnderline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/gray_transparent_70</item>
+    </style>
+
+    <style name="DropDownItemValue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/carbon</item>
+    </style>
+
+    <style name="DropDownItemArrow">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:tint">@color/colorAccent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="InputBoxParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:background">@drawable/shadow_with_semicircle_edge</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="InputBoxIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="InputBoxField">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:ems">30</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/carbon_transparent_70</item>
+    </style>
+
+    <style name="ActivityParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="HomeTabItemParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/padding_tab_button</item>
+        <item name="android:paddingRight">@dimen/padding_tab_button</item>
+    </style>
+
+    <style name="HomeTabItemImage">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="HomeTabItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/textsize_tab_button</item>
+    </style>
+
+    <style name="RegistrationParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">30dp</item>
+    </style>
+
+    <style name="RegistrationTitleParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegistrationTitleImage">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/circle_app</item>
+    </style>
+
+    <style name="RegistrationTitleLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">@color/text_2</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RegistrationInputBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <style name="RegistrationFAB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="DriverDocumentItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="DriverDocumentItemLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/text_3</item>
+    </style>
+
+    <style name="DriverDocumentItemArrow">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_3</item>
+        <item name="android:src">@drawable/ic_next_arrow</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="DriverDocumentItemTick">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/ic_tick</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="DriverDocumentItemSeperator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/underline_light</item>
+    </style>
+
+    <style name="MenuItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">70dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="MenuItemImage">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/circle_gray_dark</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="MenuItemLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/text_3</item>
+    </style>
+
+    <style name="MenuItemArrow">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:rotation">180</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/text_hint</item>
+    </style>
+
+    <style name="MenuItemUnderline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/text_hint</item>
+    </style>
+
+    <style name="HintAppearance" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">@color/text_red_2</item>
+    </style>
+
+
+    <style name="DocumentItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="DocumentItemLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/text_3</item>
+    </style>
+
+    <style name="DocumentItemStatus">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_red_1</item>
+    </style>
+
+    <style name="DocumentItemError">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:tint">@color/text_red_1</item>
+        <item name="android:src">@drawable/ic_i</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="DocumentItemTick">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">@drawable/ic_tick</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:tint">@color/text_green_1</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="DocumentItemLabelParent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MenuItemDottedUnderline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@drawable/dotted_line</item>
+    </style>
+
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#C64228</item>
+        <item name="colorSwitchThumbNormal">#6C6C6C</item>
+        <item name="android:colorForeground">#CCCCCC</item>
+    </style>
+
+    <style name="TripSummaryItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="TripSummaryItemLabel" parent="MenuItemLabel">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_5</item>
+    </style>
+
+    <style name="TripSummaryItemValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:minWidth">60dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_5</item>
+    </style>
+
+    <style name="HelpFeedbackItemParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30dp</item>
+    </style>
+
+    <style name="HelpFeedbackItemLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="HelpFeedbackItemTick">
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="OTPItem">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/circle_white_with_app_edge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:textCursorDrawable">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxicustomer.activity.OnTripActivity">
+
+    <include
+        layout="@layout/fragment_map"
+        app:layout_anchor="@+id/ll_on_trip_details"
+        app:layout_anchorGravity="top"/>
+
+    <include
+        android:id="@+id/ll_on_trip_details"
+        layout="@layout/layout_driver_details"/>
+
+    <ImageView
+        android:id="@+id/iv_on_trip_marker"
+        android:layout_width="16dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="240dp"
+        android:src="@drawable/ic_bottom_marker"
+        app:layout_anchor="@+id/ll_on_trip_details"
+        app:layout_anchorGravity="top|center_horizontal"/>
+
+    <in.techware.lataxicustomer.widgets.CustomTextView
+        android:id="@+id/txt_on_trip_estimated_time_of_arrival"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="256dp"
+        android:background="@drawable/circle_black"
+        android:gravity="center"
+        android:text="@string/sample_min"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_anchor="@+id/iv_on_trip_marker"
+        app:layout_anchorGravity="top|center_horizontal"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

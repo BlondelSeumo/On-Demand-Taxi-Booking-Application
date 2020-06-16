@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_item_home_trip_history_driver_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circle_carbon_transparent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/circle_carbon_transparent"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:minHeight="70dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_item_home_trip_history_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_date_and_time"
+            android:textColor="@color/text_2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@drawable/circle_green"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_item_home_trip_history_source_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sample_location"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@drawable/circle_red_1"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_item_home_trip_history_destination_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sample_location"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/text_2"/>
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:id="@+id/txt_item_home_trip_history_fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/sample_fare"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/text_red_3"
+        android:textStyle="bold"/>
+
+</LinearLayout>

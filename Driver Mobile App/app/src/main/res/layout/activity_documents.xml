@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.activity.DocumentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp"
+        android:paddingTop="20dp">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/label_driver_documents"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_3"
+            android:textSize="24sp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="1">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_driver_license"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_driver_licence_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_driver_licence_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_driver_licence_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="8">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_bank_passbook"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_bank_passbook_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_bank_passbook_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_bank_passbook_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="2">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_police_clearance_certificate"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_police_clearance_certificate_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_police_clearance_certificate_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_police_clearance_certificate_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="9">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_driver_licence_with_badge_number"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_driver_licence_with_badge_number_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_driver_licence_with_badge_number_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_driver_licence_with_badge_number_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="10">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_background_check_consent_form"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_background_check_consent_form_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_background_check_consent_form_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_background_check_consent_form_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="11">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_pan_card"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_pan_card_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_pan_card_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_pan_card_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/label_other_documents"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_3"
+            android:textSize="24sp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="5">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_vehicle_permit"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_vehicle_permit_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_vehicle_permit_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_vehicle_permit_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="4">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_vehicle_registration"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_vehicle_registration_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_vehicle_registration_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_vehicle_registration_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="6">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_commercial_insurance"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_commercial_insurance_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_commercial_insurance_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_commercial_insurance_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="3">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_fitness_certificate"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_fitness_certificate_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_fitness_certificate_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_fitness_certificate_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="7">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_tax_receipt"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_tax_receipt_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_tax_receipt_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_tax_receipt_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DocumentItemParent"
+            android:background="?selectableItemBackground"
+            android:onClick="onDocumentsItemClick"
+            android:tag="12">
+
+            <LinearLayout
+                style="@style/DocumentItemLabelParent">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/DocumentItemLabel"
+                    android:text="@string/label_no_objection_certificate"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_documents_no_objection_certificate_status"
+                    style="@style/DocumentItemStatus"
+                    android:text="@string/label_missing"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_documents_no_objection_certificate_error"
+                style="@style/DocumentItemError"/>
+
+            <ImageView
+                android:id="@+id/iv_documents_no_objection_certificate_accepted"
+                style="@style/DocumentItemTick"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorPrimary"
+	android:minHeight="?actionBarSize"
+	android:orientation="vertical">
+	
+	
+	<in.techware.lataxicustomer.widgets.CustomTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/label_your_last_trip"
+		android:textColor="@color/white"
+		android:textSize="20sp" />
+	
+	<in.techware.lataxicustomer.widgets.CustomTextView
+		android:id="@+id/txt_toolbar_trip_feedback_date"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/sample_date"
+		android:textColor="@color/white" />
+</LinearLayout>

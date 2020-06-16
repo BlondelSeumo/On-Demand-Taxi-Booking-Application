@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.activity.TripSummaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="50dp">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/label_trip_ended"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_4"
+            android:textStyle="bold"/>
+
+        <ViewFlipper
+            android:id="@+id/viewflipper_trip_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:minHeight="120dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_click_app_dark_rectangle_with_semicircle_edge"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:minWidth="200dp"
+                android:onClick="onTripSummaryCollectCashClick"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/label_collect_cash"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_action_tick"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_trip_summary_tick"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/label_cash_collected"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_green_2"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </ViewFlipper>
+
+
+        <View
+            style="@style/MenuItemDottedUnderline"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/label_rider_pays"
+            android:textAllCaps="true"
+            android:textColor="@color/text_5"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_trip_summary_rider_pays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint="@string/sample_fare"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+        <!--<ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_trip_details"/>-->
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/label_trip_details"
+            android:textAllCaps="true"
+            android:textColor="@color/text_4"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_gray_rectangle_with_semicircle_edge"/>
+
+        <LinearLayout
+            style="@style/TripSummaryItemParent">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/TripSummaryItemLabel"
+                android:text="@string/label_base_fare"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_summary_base_fare"
+                style="@style/TripSummaryItemValue"
+                android:hint="@string/sample_fare"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/TripSummaryItemParent">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/TripSummaryItemLabel"
+                android:text="@string/label_la_taxi_fee"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_summary_la_taxi_fare"
+                style="@style/TripSummaryItemValue"
+                android:hint="@string/sample_fare"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/TripSummaryItemParent"
+            android:visibility="gone">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/TripSummaryItemLabel"
+                android:text="@string/label_tolls"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_summary_tolls_fare"
+                style="@style/TripSummaryItemValue"
+                android:hint="@string/sample_fare"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/TripSummaryItemParent"
+            android:visibility="visible">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/TripSummaryItemLabel"
+                android:text="@string/label_tax"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_summary_tax"
+                style="@style/TripSummaryItemValue"
+                android:hint="@string/sample_fare"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/TripSummaryItemParent">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/TripSummaryItemLabel"
+                android:text="@string/label_riders_discount"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_summary_riders_discount"
+                style="@style/TripSummaryItemValue"
+                android:hint="@string/sample_fare"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,64 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/colorPrimary"
+    android:elevation="1dp"
+    android:minHeight="?attr/actionBarSize"
+    android:textColor="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!--<in.techware.lataxi.widgets.CustomTextView
+        android:id="@+id/txt_action_search"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:onClick="onSearchClick"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingRight="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_action_search"
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+        <!--<ImageView
+            android:id="@+id/iv_marker_tooolbar"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_marker"
+            android:layout_weight="1"/>-->
+
+        <!--<ImageView
+            android:id="@+id/ic_action_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_action_search"/>-->
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+

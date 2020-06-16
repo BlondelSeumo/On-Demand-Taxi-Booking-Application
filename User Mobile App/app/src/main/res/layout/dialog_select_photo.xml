@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	app:cardBackgroundColor="@color/white"
+	app:cardCornerRadius="25dp"
+	app:cardElevation="5dp"
+	app:cardUseCompatPadding="true">
+	
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:background="@color/white"
+		android:gravity="center"
+		android:minHeight="80dp"
+		android:orientation="horizontal"
+		android:padding="20dp">
+		
+		<LinearLayout
+			android:id="@+id/ll_dialog_select_photo_camera"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="?selectableItemBackground"
+			android:gravity="center"
+			android:minWidth="100dp"
+			android:minHeight="100dp"
+			android:orientation="vertical">
+			
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginTop="5dp"
+				android:scaleType="centerInside"
+				app:srcCompat="@drawable/ic_camera" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:minHeight="40dp"
+				android:text="@string/label_camera"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@color/text_3" />
+		
+		</LinearLayout>
+		
+		<View
+			android:layout_width="1dp"
+			android:layout_height="fill_parent"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp"
+			android:background="#FF000000" />
+		
+		<LinearLayout
+			android:id="@+id/ll_dialog_select_photo_gallery"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="?selectableItemBackground"
+			android:gravity="center"
+			android:minWidth="100dp"
+			android:minHeight="100dp"
+			android:orientation="vertical">
+			
+			<ImageView
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:layout_marginTop="5dp"
+				android:scaleType="centerInside"
+				app:srcCompat="@drawable/ic_gallery" />
+			
+			<in.techware.lataxicustomer.widgets.CustomTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:minHeight="40dp"
+				android:text="@string/label_gallery"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="@color/text_3" />
+		
+		</LinearLayout>
+	
+	</LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/fl_car_list"
+        android:layout_width="140dp"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/iv_car_list"
+            android:layout_width="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_car_la_landing_page"
+            android:layout_gravity="center"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_car_list"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sample_la_go"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="bottom|center"/>
+
+    </FrameLayout>
+
+</LinearLayout>

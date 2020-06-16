@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="in.techware.lataxicustomer.activity.SearchHomeWorkActivity">
+	
+	
+	<fragment
+		android:id="@+id/search_home_work_autocomplete_fragment"
+		android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		/>
+	
+	
+	<!--<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary"
+		android:gravity="center"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+		android:minHeight="?actionBarSize"
+		android:orientation="horizontal">
+
+
+		<in.techware.lataxi.widgets.CustomEditText
+			android:id="@+id/etxt_search_home_work"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:cursorVisible="true"
+			android:hint="@string/hint_search_or_type_a_location_here"
+			android:maxLines="1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="@color/white"
+			android:backgroundTint="#a0A7BDC2"
+			android:textColorHint="#9DACB1"
+			android:textCursorDrawable="@drawable/color_cursor"/>
+
+		&lt;!&ndash;<ImageButton
+			android:layout_width="20dp"
+			android:layout_height="20dp"
+			android:scaleType="centerInside"
+			android:background="?selectableItemBackground"
+			android:src="@drawable/ic_action_search"/>&ndash;&gt;
+
+
+	</LinearLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_search_home_work_results"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_margin="20dp"
+		android:layout_weight="1"
+		tools:listitem="@layout/item_search_results"/>-->
+
+</LinearLayout>

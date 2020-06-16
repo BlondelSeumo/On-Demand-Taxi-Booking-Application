@@ -1,0 +1,244 @@
+﻿<resources>
+	<string name="app_name">LaTaxi</string>
+	
+	<string name="api_key">AIzaSyB0Dbk_h6KGImwy1JtsJxMoTawfRzFlNGc</string>
+	<string name="browser_api_key">AIzaSyB0Dbk_h6KGImwy1JtsJxMoTawfRzFlNGc</string>
+	
+	<string name="action_edit_account">Edit Account</string>
+	<string name="action_sign_out">Sign Out</string>
+	
+	<string name="btn_add_code">Add Code</string>
+	<string name="btn_add_home">Add Home</string>
+	<string name="btn_add_work">Add Work</string>
+	<string name="btn_apply_promo_code">Apply Promo Code</string>
+	<string name="btn_cancel">Cancel</string>
+	<string name="btn_contact">Contact</string>
+	<string name="btn_dismiss">Dismiss</string>
+	<string name="btn_done">Done</string>
+	<string name="btn_forgot_password">Forgot Password?</string>
+	<string name="btn_get_fare_estimate">Get Fare Estimate</string>
+	<string name="btn_invite_friends">Invite Friends</string>
+	<string name="btn_login">Login</string>
+	<string name="btn_ok">OK</string>
+	<string name="btn_open_settings">Open Settings</string>
+	<string name="btn_receipt">Receipt</string>
+	<string name="btn_refresh">Refresh</string>
+	<string name="btn_register">Register</string>
+	<string name="btn_request_la">Request LA</string>
+	<string name="btn_retry">Retry</string>
+	<string name="btn_save">Save</string>
+	<string name="btn_set_pickup_location">Set Pick Up Location</string>
+	<string name="btn_sign_in">Sign In</string>
+	<string name="btn_skip">Skip</string>
+	<string name="btn_submit">Submit</string>
+	
+	<string name="drawer_close">Close</string>
+	<string name="drawer_open">Open</string>
+	
+	<string name="feedback_bad_car_quality">Car Quality</string>
+	<string name="feedback_bad_cleanliness">Cleanliness</string>
+	<string name="feedback_bad_comfort">Comfort</string>
+	<string name="feedback_bad_driving">Driving</string>
+	<string name="feedback_bad_other">Other</string>
+	<string name="feedback_bad_service">Service</string>
+	<string name="feedback_good_car_quality">Car Quality</string>
+	<string name="feedback_good_cleanliness">Cleanliness</string>
+	<string name="feedback_good_comfort">Comfort</string>
+	<string name="feedback_good_driving">Driving</string>
+	<string name="feedback_good_other">Other</string>
+	<string name="feedback_good_service">Service</string>
+	<string name="feedback_my_driver_was_unprofessional">My driver was Unprofessional</string>
+	<string name="feedback_my_vehicle_wasn_t_what_i_expected">My vehicle wasn\'t what i expected</string>
+	
+	<string name="hint_0">0</string>
+	<string name="hint_destination_required">Destination Required</string>
+	<string name="hint_email">name@example.com</string>
+	<string name="hint_email_address">Email Address</string>
+	<string name="hint_enter_the_destination">Enter the Destination</string>
+	<string name="hint_enter_the_promo_code">Enter the Promo Code</string>
+	<string name="hint_enter_the_source">Enter the Source</string>
+	<string name="hint_enter_your_email_address">Enter Your Email Address</string>
+	<string name="hint_enter_your_name_here">Enter your name here</string>
+	<string name="hint_enter_your_number">Enter Your Number</string>
+	<string name="hint_enter_your_password">Enter your password</string>
+	<string name="hint_password">Password</string>
+	<string name="hint_search_or_type_a_location_here">Search or Type a Location here</string>
+	<string name="hint_type_here">Type here</string>
+	<string name="hint_username">Username</string>
+	
+	<string name="label_address">address</string>
+	<string name="label_at">at</string>
+	<string name="label_base_fare">Base Fare</string>
+	<string name="label_base_rate">Base rate</string>
+	<string name="label_camera">Camera</string>
+	<string name="label_cancelled">Cancelled</string>
+	<string name="label_car_name">Car Name</string>
+	<string name="label_car_number">Car Number</string>
+	<string name="label_car_quality">Car Quality</string>
+	<string name="label_cash">Cash</string>
+	<string name="label_choose_an_action">Choose an action</string>
+	<string name="label_cleanliness">Cleanliness</string>
+	<string name="label_comfort">Comfort</string>
+	<string name="label_confirmation">Confirmation</string>
+	<string name="label_create_your_account_password">Create your account Password</string>
+	<string name="label_destination">Destination</string>
+	<string name="label_details">Details</string>
+	<string name="label_distance_fare">Distance Fare</string>
+	<string name="label_driver_name">Driver Name</string>
+	<string name="label_driving">Driving</string>
+	<string name="label_email">Email</string>
+	<string name="label_enter_the_4_digit_code_sent_to_you">Enter the 4-digit code sent to you</string>
+	<string name="label_enter_the_verification_code">Enter the verification code sent to you</string>
+	<string name="label_estd_fare">Estd Fare</string>
+	<string name="label_eta">ETA</string>
+	<string name="label_gallery">Gallery</string>
+	<string name="label_give_friends_free_ride_credit_to_try_la_taxi_you_ll_get_50_off_each_off_your_next_2_rides_when_they_start_riding">Give friends free ride credit to try LaTaxi. You\'ll get र50 off each off your next 2 rides when they start riding.</string>
+	<string name="label_i_had_an_issue_with_reciept_or_payment">I had an issue with receipt or payment</string>
+	<string name="label_i_lost_an_item">I Lost an item</string>
+	<string name="label_i_was_incorrectly_charged_cancellation_fee">I was incorrectly charged cancellation fee</string>
+	<string name="label_i_would_like_a_refund">I would like a refund</string>
+	<string name="label_just_a_ride">Just A Ride</string>
+	<string name="label_kilometers">Kilometers</string>
+	<string name="label_max_size">Max Size</string>
+	<string name="label_min_fare">Min Fare</string>
+	<string name="label_minute_rate">Minute rate</string>
+	<string name="label_minutes">Minutes</string>
+	<string name="label_mobile">Mobile</string>
+	<string name="label_more_than">More Than</string>
+	<string name="label_name">Name</string>
+	<string name="label_no_cars_available">No Cars Available</string>
+	<string name="label_not_available">N/A</string>
+	<string name="label_other">Other</string>
+	<string name="label_places">Places</string>
+	<string name="label_please_take_a_few_minutes_to_give_us_feedbcack_on_your_recent_ride_with_the_lataxi_driver">Please take a few minutes to give us feedback on your recent ride with the LaTaxi driver</string>
+	<string name="label_please_take_a_few_moments_to_give_us_feedback_on_your_recent_ride_with_the_la_taxi_driver">Please take a few moments to give us feedback on your recent ride with the LaTaxi Driver</string>
+	<string name="label_please_take_a_few_moments_to_give_us_feedback_on_your_recent_ride_with_the_la_taxi_driver_bad_feedback">Please take a few moments to give us feedback on your recent ride with the LaTaxi Driver</string>
+	<string name="label_profile">Profile</string>
+	<string name="label_promotion">Promotion</string>
+	<string name="label_rate_nyour_trip">RATE YOUR TRIP</string>
+	<string name="label_requesting">Requesting…</string>
+	<string name="label_resend_code_in">Re send code in</string>
+	<string name="label_say_thanks">Say Thanks!</string>
+	<string name="label_select">Select :</string>
+	<string name="label_service">Service</string>
+	<string name="label_settings">Settings</string>
+	<string name="label_share_your_invite_code">Share your invite code</string>
+	<string name="label_source">Source</string>
+	<string name="label_sub_total">Sub Total</string>
+	<string name="label_time_fare">Time Fare</string>
+	<string name="label_to">To</string>
+	<string name="label_total_fare">Total Fare</string>
+	<string name="label_total_rate">Total rate</string>
+	<string name="label_trip_cancelled">Trip Cancelled</string>
+	<string name="label_trips">Trips</string>
+	<string name="label_what_s_your_email_address">What\'s your email Address?</string>
+	<string name="label_what_went_well">What went well?</string>
+	<string name="label_what_went_wrong">What went wrong?</string>
+	<string name="label_whats_s_your_name">Whats\'s your name?</string>
+	<string name="label_with_you_when_you_want_to_keep_n_moving_forward">With you When You Want To Keep\nMoving Forward</string>
+	<string name="label_you_rated">You Rated</string>
+	<string name="label_your_fare_may_change_if_you_update_your_destination_or_make_multiple_stops">Your fare may change if you Update your destination or make multiple stops</string>
+	<string name="label_your_last_trip">Your Last Trip</string>
+	<string name="label_your_lataxi_fare_is">Your LaTaxi Fare is</string>
+	<string name="label_your_past_trips">Your Past Trips</string>
+	<string name="label_request">Request</string>
+	
+	<string name="message_destination_required">Destination Is Required</string>
+	<string name="message_email_is_required">Email is Required</string>
+	<string name="message_enter_a_feedback_for_the_trip">Please enter a feedback for the trip</string>
+	<string name="message_enter_a_valid_email_address">Enter a Valid email</string>
+	<string name="message_enter_a_valid_promocode">Enter a Valid Promocode</string>
+	<string name="message_feedback_is_not_sent">Feedback is not sent</string>
+	<string name="message_feedback_is_successfully_sent">Feedback is successfully sent</string>
+	<string name="message_home_location_added">Home Location Added</string>
+	<string name="message_invalid_verification_code">Invalid Verification Code. Please Try Again!</string>
+	<string name="message_is_already_registered">Is Already Registered. Please Try Again With Another Number</string>
+	<string name="message_login_failed">Login Failed</string>
+	<string name="message_login_is_successful">Login is Successful</string>
+	<string name="message_name_is_required">Name is required</string>
+	<string name="message_no_cars_available_for_the_location">No Cars Available for the given Location.</string>
+	<string name="message_no_driver_available">No Driver is Available. Please try again later</string>
+	<string name="message_no_network_available">No Network Available!!! Please Try Again Later!!!</string>
+	<string name="message_no_trips_taken_yet">No Trips Taken Yet</string>
+	<string name="message_nothing_to_show">Nothing To Show</string>
+	<string name="message_password_is_required">Password is Required</string>
+	<string name="message_password_minimum_character">Password should be atleast 8 Characters</string>
+	<string name="message_phone_number_already_exists">Phone Number Already Exists</string>
+	<string name="message_phone_number_is_required">Phone number is required</string>
+	<string name="message_phone_number_successfully_verified">Phone Number Was Successfully Verified</string>
+	<string name="message_phone_verification_failed">Phone Number Verification Failed. Please Try Again</string>
+	<string name="message_phone_verified_successfully">Your Mobile Number Has Been Successfully Verified</string>
+	<string name="message_please_enable_location_service_from_settings">Please enable location service from the Settings.</string>
+	<string name="message_please_select_a_country_dial_code">Please select a Country Dial Code</string>
+	<string name="message_profile_updated_successfully">Profile Updated Successfully</string>
+	<string name="message_promocode_is_successfully_sent">Promo Code is Successfully sent</string>
+	<string name="message_select_a_feedback">Select A FeedBack</string>
+	<string name="message_sending_verification_code">Sending Verification Code…</string>
+	<string name="message_service_not_available">Service Not Available</string>
+	<string name="message_something_went_wrong">Something Went Wrong! Please Try Again Later!!</string>
+	<string name="message_source_and_destination_are_same">Source and Destination are Same!</string>
+	<string name="message_thank_you">Thank You</string>
+	<string name="message_the_given_destination_is_out_of_the_service_area">The given Destination is out of the Service Area!…</string>
+	<string name="message_trip_cancelled">Trip Cancelled</string>
+	<string name="message_trip_ended">Trip Ended!</string>
+	<string name="message_verification_code_sent_to">Verification Code sent to</string>
+	<string name="message_web_error_msg">Unable to connect to the server. Please try again later</string>
+	<string name="message_work_location_added">Work Location Added</string>
+	<string name="message_your_new_password_is_sent_to_your_email_address">Your New Password is sent to the given Email Address.</string>
+	
+	<string name="sample_4_people">4 People</string>
+	<string name="sample_amount">Amount</string>
+	<string name="sample_base_rate">Base rate</string>
+	<string name="sample_date">Date</string>
+	<string name="sample_email">name@example.com</string>
+	<string name="sample_excellent">Excellent</string>
+	<string name="sample_fare">र 75</string>
+	<string name="sample_kilometer_fare">Kilometer Fare</string>
+	<string name="sample_kilometer_rate">Kilometer rate</string>
+	<string name="sample_la_go">La Go</string>
+	<string name="sample_lorem_ipsum_small">lorem ipsum small</string>
+	<string name="sample_min">Min</string>
+	<string name="sample_ok">OK</string>
+	<string name="sample_payment">payment</string>
+	<string name="sample_place">place</string>
+	<string name="sample_promotion_rate">Promotion rate</string>
+	<string name="sample_rate_60">र 60</string>
+	<string name="sample_subtotal_rate">Subtotal rate</string>
+	<string name="sample_time">Time</string>
+	<string name="sample_total_fare">Total Fare</string>
+	<string name="sample_total_rate">Total rate</string>
+	
+	<string name="title_activity_pick_up_location">PickUpLocationActivity</string>
+	<string name="title_add_home">Add Home</string>
+	<string name="title_add_work">Add Work</string>
+	<string name="title_edit_account">Edit Account</string>
+	<string name="title_free_rides">Free Rides</string>
+	<string name="title_mobile_verification">Mobile Verification</string>
+	<string name="title_receipt">Receipt</string>
+	<string name="title_register">Register</string>
+	<string name="title_settings">Settings</string>
+	<string name="title_trip_list">Trips</string>
+	<string name="title_select_photo_from">Select Photo From :</string>
+	<string name="label_1_min_ago">1 min ago</string>
+	<string name="label_min_ago">min ago</string>
+	<string name="label_hour_ago">hrs ago</string>
+	<string name="label_please_share_you_feedback">Please share your valuable feedback about the trip</string>
+	
+	<string-array name="countrycodes">
+		<item>+91</item>
+		<item>+61</item>
+		<item>+27</item>
+		<item>+1</item>
+		<item>+92</item>
+		<item>+86</item>
+		<item>+33</item>
+		<item>+39</item>
+		<item>+49</item>
+		<item>+54</item>
+		<item>+81</item>
+		<item>+7</item>
+	
+	</string-array>
+
+
+</resources>

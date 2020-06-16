@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_appcompat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.BaseAppCompatActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorlayout_base_appcompat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:fitsSystemWindows="true"
+        tools:context=".activity.BaseAppCompatActivity">
+
+        <!--		<android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout_base_appcompat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_base_appcompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:titleEnabled="true"
+                app:collapsedTitleGravity="top|left"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <FrameLayout
+                    android:id="@+id/lyt_collapsing_header_appcompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="parallax">
+                </FrameLayout>-->
+        <!--				<ImageView
+                            android:id="@+id/image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:fitsSystemWindows="true"
+                            app:layout_collapseMode="parallax"/>-->
+
+        <include layout="@layout/toolbar"/>
+        <!--		</android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+    -->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_base_appcompat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="?attr/actionBarSize">
+
+            <FrameLayout
+                android:id="@+id/lyt_frame_appcompat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/lyt_contents_appcompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:orientation="vertical">
+
+
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lyt_default_message_base_appcompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_default_message_base_appcompat"
+                        android:tint="@color/carbon"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerInside"/>
+
+                    <in.techware.lataxidriverapp.widgets.CustomTextView
+                        android:id="@+id/txt_default_message_base_appcompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="50dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/label_no_data_available"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/carbon"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/lyt_progress_base_appcompat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:visibility="visible">
+
+                    <ProgressBar
+                        android:id="@+id/progress_base_appcompat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:indeterminate="true"
+                        android:visibility="visible"/>
+                </FrameLayout>
+            </FrameLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!-- Left Drawrer -->
+
+    <!--
+        <FrameLayout
+            android:id="@+id/leftDrawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+        </FrameLayout>
+    -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view_base_appcompat"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:minWidth="300dp"
+
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:menu="@menu/menu_navigation_drawer"/>
+    <!-- Right Drawrer -->
+
+    <!--     <FrameLayout
+            android:id="@+id/rightDrawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_gravity="end" >
+        </FrameLayout> -->
+
+</android.support.v4.widget.DrawerLayout>

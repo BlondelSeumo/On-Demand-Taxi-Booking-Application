@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.WelcomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/bg_welcome_header"/>
+
+            <LinearLayout
+                android:id="@+id/ll_welcome_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:minHeight="200dp"
+                android:orientation="vertical">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_earn_more"
+                    android:textColor="#f9f9f9"
+                    android:textSize="23sp"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_with_la_taxi"
+                    android:textColor="#f9f9f9"
+                    android:textSize="27sp"
+                    android:textStyle="bold"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="45dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_welcome_header"
+            android:layout_marginBottom="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/ic_welcome_screen_app_logo"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomButton
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/btn_click_white_rectangle_with_dark_semicircle_edge"
+                android:elevation="5dp"
+                android:onClick="onWelcomeActivitySignInClick"
+                android:text="@string/btn_sign_in"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomButton
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"
+                android:elevation="5dp"
+                android:onClick="onWelcomeActivityRegisterClick"
+                android:text="@string/btn_register"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

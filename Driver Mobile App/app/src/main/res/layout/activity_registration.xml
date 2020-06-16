@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.RegistrationActivity">
+
+    <ViewFlipper
+        android:id="@+id/viewflipper_registration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_registration_phone"/>
+
+        <include layout="@layout/layout_registration_email"/>
+
+        <include layout="@layout/layout_registration_password"/>
+
+        <include layout="@layout/layout_registration_name"/>
+
+        <include layout="@layout/layout_registration_location"/>
+
+        <include layout="@layout/layout_registration_submit"/>
+
+    </ViewFlipper>
+
+</LinearLayout>

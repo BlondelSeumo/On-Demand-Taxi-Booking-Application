@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.techware.lataxidriverapp">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="in.techware.lataxidriverapp.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- Remove this to remove Fabric -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2745f5f02c512f92f0937275cb61aa2ff8d33a2d"/>
+        
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key"/>
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_splash"/>
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent"/>
+
+        <service android:name="in.techware.lataxidriverapp.services.LaTaxiDriverFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="in.techware.lataxidriverapp.services.LaTaxiDriverFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.BaseAppCompatNoDrawerActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.BaseAppCompatActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme.DarkStatusBar">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.OtpVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.DriverLicenceTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme.DarkStatusBar">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.LegalConsentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme.DarkStatusBar">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.DriverDocumentsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.ProfilePhotoUploadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme.DarkStatusBar">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.HomeActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.DocumentUploadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme.DarkStatusBar">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.TripDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.TripHistoryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.PayStatementsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.RiderFeedbackActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.ProTipsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.HelpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.HelpListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.DocumentsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.SettingsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme.DarkStatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.EditVehicleDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/LoginTheme.DarkStatusBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.SoftwareLicenseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.MapLicenseActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.AccessibilityActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.TripHelpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.TripSummaryActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.RequestConfirmationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.OnTripActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="in.techware.lataxidriverapp.activity.MobileVerificationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.activity.HelpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_help_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_help"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_3"
+            android:textSize="20sp"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_help_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textSize="12sp"
+            android:text="@string/sample_lorem_ipsum_large"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/text_1"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="30dp"
+            android:text="@string/label_was_this_helpful"
+            android:textColor="@color/text_1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:onClick="onHelpHelpfulClick"
+                android:background="?selectableItemBackground"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_helpful"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:onClick="onHelpNotHelpfulClick"
+                android:background="?selectableItemBackground"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_helpful_not"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

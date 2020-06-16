@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxicustomer.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="60dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_logo"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:text="@string/app_name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <in.techware.lataxicustomer.widgets.CustomEditText
+                android:id="@+id/etxt_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/login_edit_text"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint_email_address"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/login_edit_text"
+                android:textColorHint="@color/login_edit_text"/>
+
+            <in.techware.lataxicustomer.widgets.CustomEditText
+                android:id="@+id/etxt_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/login_edit_text"
+                android:gravity="center_horizontal"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColor="@color/login_edit_text"
+                android:textColorHint="@color/login_edit_text"/>
+
+            <in.techware.lataxicustomer.widgets.CustomButton
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+                android:foreground="?selectableItemBackground"
+                android:onClick="onLoginButtonClick"
+                android:text="@string/btn_login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+            <in.techware.lataxicustomer.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="40dp"
+                android:onClick="onForgotPasswordClick"
+                android:text="@string/btn_forgot_password"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

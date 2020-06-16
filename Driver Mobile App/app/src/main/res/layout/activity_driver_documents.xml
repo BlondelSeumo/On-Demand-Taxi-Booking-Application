@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DriverDocumentsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/label_please_upload_your_documents"
+            android:textColor="@color/text_4"
+            android:textSize="18sp"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/label_to_drive_with_lataxi"
+            android:textColor="@color/text_1"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="6dp"
+            android:layout_margin="25dp"
+            android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsDriverLicenseClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_driver_license"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_driver_license_next"
+                style="@style/DriverDocumentItemArrow"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_driver_license_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DriverDocumentItemSeperator"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsPoliceClearanceCertificateClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_police_clearance_certificate"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_police_clearance_certificate_next"
+                style="@style/DriverDocumentItemArrow"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_police_clearance_certificate_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DriverDocumentItemSeperator"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsFitnessCertificateClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_fitness_certificate"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_fitness_certificate_next"
+                style="@style/DriverDocumentItemArrow"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_fitness_certificate_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DriverDocumentItemSeperator"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsVehicleRegistrationClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_vehicle_registration"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_vehicle_registration_next"
+                style="@style/DriverDocumentItemArrow"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_vehicle_registration_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DriverDocumentItemSeperator"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsVehiclePermitClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_vehicle_permit"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_vehicle_permit_next"
+                style="@style/DriverDocumentItemArrow"  />
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_vehicle_permit_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DriverDocumentItemSeperator"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsCommercialInsuranceClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_commercial_insurance"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_commercial_insurance_next"
+                style="@style/DriverDocumentItemArrow" />
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_commercial_insurance_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/DriverDocumentItemSeperator"/>
+
+        <LinearLayout
+            style="@style/DriverDocumentItemParent"
+            android:onClick="onDriverDocumentsTaxReceiptClick">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/DriverDocumentItemLabel"
+                android:text="@string/label_tax_receipt"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_tax_receipt_next"
+                style="@style/DriverDocumentItemArrow" />
+
+            <ImageView
+                android:id="@+id/iv_driver_docuements_tax_receipt_saved"
+                style="@style/DriverDocumentItemTick"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_shadow"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomButton
+            android:id="@+id/btn_driver_licence_type_continue"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+            android:onClick="onDriverDocumentsSubmitClick"
+            android:text="@string/btn_continue"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

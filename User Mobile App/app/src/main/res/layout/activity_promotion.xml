@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_free_rides_actiivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxicustomer.activity.PromotionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="140dp"
+        android:orientation="vertical">
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="#848486"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/label_with_you_when_you_want_to_keep_n_moving_forward"
+            android:textSize="14sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="50dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"/>
+
+    </LinearLayout>
+
+    <in.techware.lataxicustomer.widgets.CustomEditText
+        android:id="@+id/etxt_promo_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="@string/hint_enter_the_promo_code"
+        android:visibility="gone"/>
+
+    <in.techware.lataxicustomer.widgets.CustomButton
+        android:id="@+id/txt_add_code"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_black_round_edges"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:onClick="onAddCodeClick"
+        android:text="@string/btn_add_code"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

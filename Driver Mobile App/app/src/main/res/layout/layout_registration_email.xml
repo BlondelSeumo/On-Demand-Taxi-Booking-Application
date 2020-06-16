@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.activity.RegistrationActivity">
+
+    <LinearLayout
+        style="@style/RegistrationParent">
+
+
+        <LinearLayout
+            style="@style/RegistrationTitleParent">
+
+            <ImageView
+                style="@style/RegistrationTitleImage"
+                app:srcCompat="@drawable/ic_title_email"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                style="@style/RegistrationTitleLabel"
+                android:text="@string/label_what_is_your_email_address"/>
+
+        </LinearLayout>
+
+        <in.techware.lataxidriverapp.widgets.CustomEditText
+            android:id="@+id/etxt_registration_email"
+            style="@style/RegistrationInputBox"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/RegistrationFAB"
+        android:onClick="onRegistrationEmailSubmitClick"
+        app:backgroundTint="@color/bg_fab"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_arrow"/>
+
+
+</FrameLayout>

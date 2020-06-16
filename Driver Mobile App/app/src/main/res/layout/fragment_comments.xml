@@ -1,0 +1,56 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.fragments.CommentsFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_comments_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/label_no_comments_yet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_2"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_gray_rectangle_with_semicircle_edge"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/label_keep_driving_and_see"
+            android:textColor="@color/text_2"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        tools:listitem="@layout/item_comments">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>

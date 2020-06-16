@@ -1,0 +1,64 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:background="@color/colorPrimary"
+    android:elevation="1dp"
+    android:minHeight="?attr/actionBarSize"
+    android:textColor="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <!--<in.techware.lataxi.widgets.CustomEditText
+        android:id="@+id/etxt_source"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:drawableRight="@drawable/ic_action_search"
+        android:gravity="center_vertical"
+        android:hint="Enter Destination"
+        android:maxLines="1"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingStart="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <in.techware.lataxicustomer.widgets.CustomEditText
+            android:id="@+id/etxt_search_place"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="4"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:inputType="textCapWords"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColorHint="#9DACB1"
+            android:textCursorDrawable="@drawable/color_cursor"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_search"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+

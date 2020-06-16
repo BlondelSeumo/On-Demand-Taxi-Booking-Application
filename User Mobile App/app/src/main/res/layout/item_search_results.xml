@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_previous_search_search_page"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/sample_place"
+            android:textColor="@color/black"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/label_address"/>
+
+    </LinearLayout>
+
+</LinearLayout>

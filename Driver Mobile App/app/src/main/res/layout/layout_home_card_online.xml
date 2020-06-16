@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:id="@+id/lyt_home_card_online"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:id="@+id/txt_home_card_online_trips_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_trips"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"/>
+
+    <in.techware.lataxidriverapp.widgets.CustomTextView
+        android:id="@+id/txt_home_card_online_partner_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/sample_you_are_good_partner"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text_3"/>
+
+</LinearLayout>

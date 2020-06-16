@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewflipper_document_upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.DocumentUploadActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_document_upload_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_document_upload_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="70dp"
+                android:text="@string/label_fitness_certificate"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/label_take_a_photo_of_your_document"
+                android:textSize="18sp"/>
+
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="45dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/label_ensure_all_information"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_document_upload_take_photo"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+            android:gravity="center"
+            android:onClick="onDocumentUploadTakePhotoClick"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_camera"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/btn_take_photo"
+                android:textColor="@color/white"
+                app:textAllCaps="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_document_preview"
+        android:visibility="gone"/>
+
+</ViewFlipper>
+
+
+

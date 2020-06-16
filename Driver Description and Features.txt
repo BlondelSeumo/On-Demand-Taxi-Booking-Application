@@ -1,0 +1,118 @@
+﻿Documentation : 
+
+Pre-Requisites :
+1. 	Android SDK
+2. 	Android Studio
+3. 	Java Development Kit (JDK)
+
+
+
+1. 	Extract LaTaxiDriver.zip to your workspace
+2. 	Open the extracted folder/project from Android Studio
+3. 	Open \LaTaxiDriver\app\build.gradle
+	~ Edit the applicationId from "in.techware.lataxidriver" to your project id. This should be uinque so that there shouldn't be any conflict while uploading to Google Play Store.
+4.	Open http://https://fabric.io/kits?show_signup=true
+	~	Register with Fabric and open the confirmation link in Email.
+	~	Follow the instructions provided in the link to install Fabric Plugin
+	~ 	Once Fabric Plugin is installed, click on the fabric plugin icon and follow the instructions provided there.
+	~	Get the Fabric API Key and update in the AndroidManifest.xml from \LaTaxiDriver\app\src\main\AndroidManifest.xml and edit the following 
+			<meta-data
+				android:name="io.fabric.ApiKey"
+				android:value="Your-App-id"/>  >>>>>>>>> change your-app-id to id from fabric.
+	~  To remove Fabric from project remove the following code from source
+		- Remove the above metadata from AndroidManifest.xml
+		- Open BaseActivity.java from \LaTaxiDriver\app\src\main\java\in\techware\lataxidriver\activity
+		  Remove Fabric.with(this, new Crashlytics()); from initbase Method
+5.	Open Tools Menu in Android Studio, Select Firebase. Assistant Toolbar will be opened.
+	~ 	Select Cloud Messaging from the Firebase Assistant Toolbar	
+	~	Click Set up Firebase Cloud Messaging
+	~	If Firebase App is already created for LaTaxi, select the corresponding app. DO NOT CREATE SEPERATE FIREBASE OR GOOGLE APP.
+	~	Click On Connect to Firebase
+	~	Complete the process described in the toolbar
+6.	Open http://console.developer.google.com/
+	~	Select your Project
+	~	Select Library From the Side Menu
+	~	Enable the following Google APIs :
+			Google Maps Android API
+			Google Maps SDK for iOS
+			Google Maps JavaScript API
+			Google Places API for Android
+			Google Places API for iOS
+			Google Static Maps API
+			Google Places API Web Service
+			Google Maps Geocoding API
+			Google Maps Directions API	
+			Google Maps Distance Matrix API
+			Google Maps Geolocation API
+7.	Open https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&reusekey=true
+	~ 	Select your project
+	~	Select Google Maps Android Api
+	~	Generate and copy the Corresponding API KEY
+	~	Open \LaTaxiDriver\app\src\main\res\values\strings.xml
+	~	Change api_key value in <string name="api_key">GOOGLE_API_KEY</string> from GOOGLE_API_KEY to the copied API KEY.
+	~	Change API Key in the AndroidManifest.xml from \LaTaxiDriver\app\src\main\AndroidManifest.xml 
+			<meta-data
+				android:name="com.google.android.geo.API_KEY"
+				android:value="GOOGLE_API_KEY"/>  >>>>>>>>> change to copied API_KEY
+8.	Open https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&reusekey=true Again
+	~ 	Select your project
+	~	Select Google Maps Directions Api
+	~	Generate and copy a Server or Browser API KEY
+	~	Open \LaTaxiDriver\app\src\main\res\values\strings.xml
+	~	Change api_key value in <string name="browser_api_key">GOOGLE_SERVER_OR_BROWSER_API_KEY</string> from GOOGLE_SERVER_OR_BROWSER_API_KEY to the copied Server or Browser API KEY.				
+9.	Open https://console.firebase.google.com.
+	~	Select your project
+	~	Open https://developers.google.com/android/guides/client-auth
+	~ 	Follow the steps to generate SHA1 Fingerprint
+	~	Add the SHA1 Fingerprint to your app in Console of firebase
+	~	Download the google_services.json and mopve to project/app folder 
+10.	Open \LaTaxiDriver\app\src\main\java\in\techware\lataxidriver\net\ServiceNames.java 
+	~ Change PRODUCTION_API to your BASE URL
+	~ Change API_VERSION to match your API VERSION URL
+	~ Change PATH_UPLOAD to change the upload directory based on your url.
+11. 	Open \LaTaxiDriver\app\src\main\res\values\strings.xml
+	~ Change  app_name value from LaTaxiDriver in, "<string name="app_name">LaTaxiDriver</string>" to <string name="app_name">Your App Name</string>
+12. 	Open \LaTaxiDriver\app\src\main\res\values\colors.xml
+	~ Change colorPrimary, colorPrimayDark and colorAccent colours to change the overall theme colors
+	~ Change colour codes wherever is necessary
+13. Open \LaTaxiDriver\app\src\main\res\values\themes.xml
+		 \LaTaxiDriver\app\src\main\res\values-v21\themes.xml
+		 \LaTaxiDriver\app\src\main\res\values-v23\themes.xml
+		 \LaTaxiDriver\app\src\main\res\values-v26\themes.xml
+	~ change corresponding themes value to change the theme of activity pages.
+14. To Generate a Debug Build, Click on Build->Build Apk(s) from menu in Android Studio
+15. To Generate a Release Build, Click on Build->Generate Signed Apk, from menu in Android Studio,
+	~ This will open up a Generate Signed Apk Popup, Click on the Create new if there is no KeyStore created and continue to create a Keystore
+	~ Click on Browse button "..." on Generate Signed Apk to open the Select/Create Key Popup
+	~ Create a new Key if not already exists.
+	~ Click on next on Generate signed Apk to open destinationselection window. Select a destination for your Signed Apk.
+	~ Click on Finish to create a Release Build APK in the destination you specified.
+16. Upload the Signed Release Apk to google Play Store.	
+
+
+
+LaTaxiDriver Description : 
+
+Lataxi is a Powerful & Scalable on-demand taxi booking app. This is a fully customizable and white labeled app for empowering your car/taxi Business. Lataxi Is build with powerful infrastructure and based on GPS for route tracking. This can support any number of drivers. This allows users to book their ride on a single click with cash payment.
+
+Requesting Lataxi is easy for passengers by the following steps-
+•	Login Lataxi
+•	Select the pickup location 
+•	Enter the destination point.
+•	View the drivers profile and track their arrival on map
+•	Cash on payment
+•	After the ride rate your experience.
+
+
+Features
+
+•	Driver Management
+•	Passenger  Management
+•	Real-time location tracking for all your cars, drivers and users
+•	See everything about your driver's day from the time he logs in, gets a booking, locates client,    starts trip, completes trip and eventually logs out at the end of the day
+•	Able to see pickup and drop-off location and cancellation details
+•	View running incentive schemes on your cars (select cities only)
+•	Monitor the performance of your cars and drivers
+•	View detailed reports of individual Driver cash collection.
+
+

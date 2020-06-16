@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trips"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="in.techware.lataxicustomer.activity.TripsActivity">
+
+    <in.techware.lataxicustomer.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="@string/label_your_past_trips"
+        android:textSize="25sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_trips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

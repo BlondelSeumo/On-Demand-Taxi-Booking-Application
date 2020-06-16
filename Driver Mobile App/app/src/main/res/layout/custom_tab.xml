@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<in.techware.lataxidriverapp.widgets.CustomTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btn_custom_tab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="35dp"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:textAppearance="?android:attr/textAppearanceSmall"/>

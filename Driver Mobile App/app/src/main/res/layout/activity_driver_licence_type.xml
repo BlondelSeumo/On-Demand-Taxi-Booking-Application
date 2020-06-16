@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DriverLicenceTypeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/label_welcome"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:textAllCaps="true"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/label_please_let_us_know_what_licence"
+            android:textColor="@color/text_5"
+            android:textSize="19sp"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="45dp"
+            android:layout_height="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"/>
+
+        <FrameLayout
+            android:id="@+id/frame_driver_licence_type_driver_cum_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@color/bg_driver_Type"
+            android:minHeight="100dp"
+            android:onClick="onDriverLicenceTypeDriverCumOwnerClick"
+            android:padding="15dp">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_driver_licence_type_driver_cum_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/label_driver_cum_owner"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/label_driver_cum_owner_option"
+                android:textColor="@color/text_3"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_licence_type_driver_cum_owner"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|right"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_tick"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_driver_licence_type_non_driving_partner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="110dp"
+            android:onClick="onDriverLicenceTypeNonDrivingPartnerClick"
+            android:padding="15dp">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_driver_licence_type_non_driving_partner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:text="@string/label_non_driver_partner"
+                android:textColor="@color/text_driver_Type"
+                android:textSize="18sp"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/label_non_driving_partner_option"
+                android:textColor="@color/text_3"/>
+
+            <ImageView
+                android:id="@+id/iv_driver_licence_type_non_driving_partner"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|right"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_tick"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <in.techware.lataxidriverapp.widgets.CustomButton
+            android:id="@+id/btn_driver_licence_type_continue"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_click_black_rectangle_with_semicircle_edge"
+            android:onClick="onDriverLicenceTypeSubmitClick"
+            android:text="@string/btn_continue"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

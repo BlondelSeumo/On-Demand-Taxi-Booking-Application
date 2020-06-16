@@ -1,0 +1,137 @@
+body {
+  margin-top:40px;
+  background: url(../img/lataxi.jpg);
+  background-repeat:
+   no-repeat;background-size: inherit;
+   background-size: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+    body {
+          margin-top: 10%;
+          margin-bottom:10%;
+    }
+}
+.logo_img {
+    width: 100px;
+    height: 85px;
+    background-color: #b3b1b1;
+    border-radius: 20px;
+}
+.stepwizard-step p {
+	margin-top: 10px;
+}
+.stepwizard-row {
+	display: table-row;
+}
+.stepwizard {
+	display: table;
+	width: 100%;
+	position: relative;margin-bottom: 17px;border-bottom: 2px solid #E36874;
+}
+.stepwizard-step button[disabled] {
+	opacity: 1 !important;
+	filter: alpha(opacity=100) !important;
+}
+.stepwizard-row:before {
+ 
+}
+.stepwizard-step {
+	display: table-cell;
+	text-align: center;
+	position: relative;
+}
+.btn-circle {
+	width: 222px;color: white;
+	height: 44px;
+	text-align: center;
+	padding: 6px 0;
+	font-size: 14px;
+	 line-height: 2.29;
+	border-radius: 0px;
+	
+}
+		
+.bms-logo {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: center;
+    width: 12%;
+    margin: 0 auto;
+}		
+.bms-wizard-wrapper {
+	  padding: 0 50px 29px; 
+    border-radius: 10px;
+    background:rgba(138, 135, 135, 0.81);
+    /*background: #3e3838;*/
+   
+    /*background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;*/
+    /*margin: 12% auto;*/
+    /*position: relative;*/
+    /*top: -20px;*/
+    width:100%;
+}
+		  .whtclr {
+    color: white;
+    font-weight: 500;
+   padding: 0px 0 9px;
+    text-transform: uppercase;font--size:15px;
+}
+		.chclr{  
+      background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0 !important; 
+    border-color: transparent;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500;font-size: 14px;
+    height: 40px !important;
+    width: 100%;}
+		
+		.next{ background: #ff9554 none repeat scroll 0 0 !important;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    outline: medium none;
+    padding: 7px;
+    width: 109px;font-size: 14px;}	
+
+.disab a{color: white !important;}
+		.actclr{background-color: #EB4354 !important;border: none !important;color: white !important;font-weight: 600 !important;}
+		.disab{background-color: #5C5858 !important;font-weight: 600 !important;border-bottom: 3px solid #E36874!important;border-left: none;border-right: none;border-top: none;}
+
+.all_dtl {
+    color: white !important;width: 100%;float: left; margin-bottom: 9px;font-family: "Open Sans",sans-serif;
+}
+.all_dtl1 {
+    color: white !important;width: 41.3%;float: left;font-size: 15px;font-family: "Open Sans",sans-serif;
+}
+.all_dtl2 {
+    color: white !important;width: 5.3%;float: left;font-size: 15px;font-family: "Open Sans",sans-serif;
+}
+.all_dtl3 {
+    color: white !important;width: 39.3%;float: left;font-size: 15px;font-family: "Open Sans",sans-serif;
+}
+.dtlall{color: white;font-family: "Open Sans",sans-serif;}
+.loader {
+    display: none;
+    text-align: center;
+    background: rgba(0, 0, 0, .75) ;
+    height: 100%;
+  margin:auto; 
+    position: fixed;
+     top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+    width: 100%;
+    z-index: 999 !important;
+}
+.loader img{
+     position: absolute;
+     top: 245px;
+     width:40px;
+     height:40px;
+
+}

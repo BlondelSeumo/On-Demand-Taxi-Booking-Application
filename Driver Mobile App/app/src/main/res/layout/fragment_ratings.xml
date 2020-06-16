@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_earning"
+    tools:context="in.techware.lataxidriverapp.fragments.RatingsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:id="@+id/txt_ratings_total_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:padding="10dp"
+            android:text="@string/sample_00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_5"
+            android:textSize="60sp"/>
+
+
+        <RatingBar
+            android:id="@+id/rating_ratings_driver"
+            android:theme="@style/RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:numStars="5"
+            android:secondaryProgressTint="@color/colorPrimaryDark"
+            android:progressTint="@color/colorPrimary"
+            android:rating="3"
+            android:stepSize=".1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center_vertical"
+            android:minHeight="80dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_ratings_current_rating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="@string/sample_rating"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="@string/label_current_rating"
+                    android:textColor="@color/text_3"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/carbon_transparent_70"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_ratings_request_accepted_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="@string/sample_percent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="@string/label_requests_accepted"
+                    android:textColor="@color/text_3"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/carbon_transparent_70"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="50dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_ratings_trips_cancelled_percent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="@string/sample_percent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_4"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:text="@string/label_trips_cancelled"
+                    android:textColor="@color/text_3"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="50dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_ratings_rider_feedback"
+                style="@style/MenuItemParent"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    style="@style/MenuItemImage"
+                    app:srcCompat="@drawable/ic_rider_feedback"/>
+
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/MenuItemLabel"
+                    android:text="@string/label_rider_feedback"/>
+
+                <ImageView
+                    style="@style/MenuItemArrow"
+                    app:srcCompat="@drawable/ic_toolbar_back"/>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/MenuItemUnderline"/>
+
+            <LinearLayout
+                android:id="@+id/ll_ratings_pro_tips"
+                style="@style/MenuItemParent"
+                android:visibility="gone"
+                android:background="?selectableItemBackground">
+
+                <ImageView
+                    style="@style/MenuItemImage"
+                    app:srcCompat="@drawable/ic_pro_tips"/>
+
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    style="@style/MenuItemLabel"
+                    android:text="@string/label_pro_Tips"/>
+
+                <ImageView
+                    style="@style/MenuItemArrow"
+                    app:srcCompat="@drawable/ic_toolbar_back"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                style="@style/MenuItemUnderline"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

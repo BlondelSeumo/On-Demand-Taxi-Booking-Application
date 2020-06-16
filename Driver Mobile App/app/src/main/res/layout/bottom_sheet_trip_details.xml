@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_bottom_sheet_trip_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="onTripDetailsDetailsClick"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/ll_trip_details_driver_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="80dp"
+        android:onClick="onTripDetailsDetailsClick"
+        android:orientation="horizontal"
+        android:paddingLeft="110dp"
+        android:paddingRight="20dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:minHeight="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/label_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_3"
+                android:textSize="12sp"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_name"
+                android:textColor="@color/text_3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="30dp"
+            android:minWidth="80dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_you_rated"
+                android:gravity="center_vertical"
+                android:minHeight="30dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_3"
+                android:textSize="12sp"/>
+
+
+            <RatingBar
+                android:id="@+id/rating_trip_details"
+                style="?attr/ratingBarStyleSmall"
+                android:theme="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressTint="@color/colorPrimaryDark"
+                android:rating="3"
+                android:progress="5"
+                android:numStars="5"
+                android:max="5"
+                android:stepSize=".5"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_rating"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="@string/label_NA"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_trip_details_detailed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="230dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="60dp"
+            android:orientation="horizontal">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_payout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sample_fare"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/text_red_3"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/text_3"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_duration"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_3"
+                    android:textSize="12sp"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_trip_details_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/sample_duration"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_5"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_distance"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/text_3"
+                    android:textSize="12sp"/>
+
+                <in.techware.lataxidriverapp.widgets.CustomTextView
+                    android:id="@+id/txt_trip_details_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/sample_distance"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_5"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line_dotted_gray"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_trip_earnings"
+            app:textAllCaps="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/text_5"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minHeight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:textColor="@color/text_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="4"
+                android:text="@string/label_fare"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_fare"
+                android:layout_width="0dp"
+                android:textColor="@color/text_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="2"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:text="@string/sample_fare"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minHeight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:textColor="@color/text_3"
+                android:layout_weight="4"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/label_la_taxi_fee"
+                android:layout_height="wrap_content"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_lataxi_fee"
+                android:layout_width="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/text_3"
+                android:layout_weight="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:gravity="right"
+                android:text="@string/sample_fare"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minHeight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:textColor="@color/text_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:text="@string/label_tax_return"
+                android:layout_height="wrap_content"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_tax_return"
+                android:layout_width="0dp"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/text_3"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/sample_fare"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/line_dotted_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:minHeight="30dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:text="@string/label_estimated_payout"
+                android:textColor="@color/text_5"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_estimated_payout"
+                android:layout_width="0dp"
+                android:textColor="@color/text_5"
+                android:layout_weight="2"
+                android:gravity="right"
+                android:text="@string/sample_fare"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@drawable/circle_green"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_source_location"
+                android:layout_width="0dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_3"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sample_location"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@drawable/circle_red_1"/>
+
+            <in.techware.lataxidriverapp.widgets.CustomTextView
+                android:id="@+id/txt_trip_details_destination_location"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:textColor="@color/text_3"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/sample_location"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

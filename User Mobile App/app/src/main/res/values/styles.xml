@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NestedScrollBarStyle">
+        <item name="android:scrollbarFadeDuration">2</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <!-- Color when pressed -->
+        <!-- Default color for the dropdown arrow and line -->
+        <item name="colorControlNormal">#ffffff</item>
+        <!--<item name="background">@color/colorPrimary</item>-->
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="RegistrationParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">30dp</item>
+    </style>
+
+    <style name="RegistrationTitleParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RegistrationTitleImage">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/circle_app</item>
+    </style>
+
+    <style name="RegistrationTitleLabel">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">#7f7f7f</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="RegistrationInputBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">#bababa</item>
+    </style>
+
+    <style name="RegistrationFAB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+</resources>

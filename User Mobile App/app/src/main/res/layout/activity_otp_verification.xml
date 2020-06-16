@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_otp_verification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxicustomer.activity.OtpVerificationActivity">
+
+    <ImageView
+        android:id="@+id/iv_back_button_otp"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onOtpPageBackButtonClick"
+        android:src="@drawable/ic_toolbar_back"/>
+
+    <in.techware.lataxicustomer.widgets.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onSkipClick"
+        android:text="@string/btn_skip"
+        android:textSize="18sp"/>
+
+    <in.techware.lataxicustomer.widgets.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/label_resend_code_in"
+        android:textSize="15sp"/>
+
+    <in.techware.lataxicustomer.widgets.CustomTextView
+        android:id="@+id/txt_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="130dp"
+        android:enabled="false"
+        android:onClick="onOTPResendClick"
+        android:textColor="#565656"
+        android:textSize="18sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_next_button"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onOtpNextButtonClick"
+        android:src="@drawable/ic_next"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="120dp">
+
+        <in.techware.lataxicustomer.widgets.OTPEditText
+            android:id="@+id/etxt_one"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:hint="@string/hint_0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@color/black"/>
+
+        <in.techware.lataxicustomer.widgets.OTPEditText
+            android:id="@+id/etxt_two"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:hint="@string/hint_0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@color/black"/>
+
+        <in.techware.lataxicustomer.widgets.OTPEditText
+            android:id="@+id/etxt_three"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:hint="@string/hint_0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@color/black"/>
+
+        <in.techware.lataxicustomer.widgets.OTPEditText
+            android:id="@+id/etxt_four"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:hint="@string/hint_0"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textCursorDrawable="@color/black"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:padding="10dp">
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_enter_the_4_digit_code_sent_to_you"
+            android:textSize="18sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/label_at"
+            android:textSize="18sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_phone_code"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="45dp"
+            android:textColor="#7f7f7f"
+            android:textSize="18sp"/>
+
+        <in.techware.lataxicustomer.widgets.CustomTextView
+            android:id="@+id/txt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="45dp"
+            android:textColor="#7f7f7f"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

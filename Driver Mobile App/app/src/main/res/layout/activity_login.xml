@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NestedScrollBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.techware.lataxidriverapp.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="100dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_splash"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/label_la_taxi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/text_5"
+            android:textStyle="bold"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_driver"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_3"
+            android:textStyle="bold"/>
+
+
+        <in.techware.lataxidriverapp.widgets.CustomEditText
+            android:id="@+id/etxt_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/gray_transparent_50"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_email_address"
+            android:minHeight="50dp"
+            android:inputType="textEmailAddress"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomEditText
+            android:id="@+id/etxt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/gray_transparent_50"
+            android:gravity="center_horizontal"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:minHeight="50dp"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomButton
+            android:id="@+id/btn_login_submit"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_click_app_rectangle_with_semicircle_edge"
+            android:onClick="onLoginSubmitClick"
+            android:text="@string/btn_log_in"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomButton
+            android:id="@+id/btn_login_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="60dp"
+            android:background="?selectableItemBackground"
+            android:onClick="onLoginForgotPasswordClick"
+            android:text="@string/btn_forgot_password"
+            android:textColor="@color/text_5"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

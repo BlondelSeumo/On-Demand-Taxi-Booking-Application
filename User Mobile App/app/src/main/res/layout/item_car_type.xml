@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="?selectableItemBackground"
+    android:gravity="center_horizontal"
+    android:minWidth="80dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_item_car_type"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"/>
+
+    <in.techware.lataxicustomer.widgets.CustomTextView
+        android:id="@+id/txt_item_car_type_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_click_green_dark_rectangle_with_semicircle_edge"
+        android:gravity="center"
+        android:minHeight="25dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.techware.lataxidriverapp.fragments.IssuesFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_issues_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/label_no_issues_reported"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/text_2"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_gray_rectangle_with_semicircle_edge"/>
+
+        <in.techware.lataxidriverapp.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/label_if_a_rider_reports_a_problem"
+            android:textColor="@color/text_2"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_issues"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_issues"
+        android:background="@color/white"
+        android:layout_gravity="top">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</FrameLayout>
